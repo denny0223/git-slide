@@ -264,44 +264,9 @@ pre > code {
 <h1></p></section>
     <section class="slide"><h1>版本控制經驗</h1></section>
     <section class="slide"><h1>Shell 熟悉程度</h1></section>
-    <section class="slide"><h3>整裝待發</h3>
+    <section class="slide"><h1>Git / GitHub</h1>
 
-<ul>
-<li>成為 <a href="http://github.com">GitHub</a> 帝國一員</li>
-<li>已持有主要武器 Git
-<ul><li>在 Terminal 輸入 <code>git</code> 確認</li>
-<li><code>sudo apt-get install git</code></li>
-<li><code>sudo yum install git</code></li></ul></li>
-<li>選擇輔助武器 - 編輯器 (vim, emacs, gedit)</li>
-</ul></section>
-    <section class="slide"><h3>環境設定</h3>
-
-<p><code>git config --global user.email "you@example.com"</code></p>
-
-<p><code>git config --global user.name "Your Name"</code></p>
-
-<p><code>git config --global color.ui true</code></p>
-
-<p><code>git config --global core.editor vim</code></p></section>
-    <section class="slide"><h3>環境設定</h3>
-
-<p><code>git config --global alias.co commit</code></p>
-
-<p><code>git config --global alias.lg "log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit --"</code></p></section>
-    <section class="slide"><h1>.gitconfig</h1>
-
-<h2>Why <code>--global</code>?</h2></section>
-    <section class="slide"><h3>Show branch names in $PS1</h3>
-
-<p><a href="http://xta.github.io/HalloweenBash/" target="_blank">Halloween Bash Profile Generator</a></p>
-
-<p><code>
-function parse_git_branch {<br />
-&nbsp;&nbsp; git branch --no-color 2&gt; /dev/null | sed -e '/^[^*]/d' -e 's/* (.*)/(\1)/' <br />
-}<br />
-</code></p>
-
-<p><code>export PS1="\h:\W \u\$(parse_git_branch)$ "</code></p></section>
+<h2>It&apos;s different</h2></section>
     <section class="slide"><div align="center">
   <img height="500" src="./img/code_smart_release-37.jpg" />
 </div>
@@ -708,9 +673,44 @@ function parse_git_branch {<br />
 <div align="center">
   <img height="500" src="./img/18333fig0103-tn.png" />
 </div></section>
-    <section class="slide"><h1>Git / GitHub</h1>
+    <section class="slide"><h3>整裝待發</h3>
 
-<h2>It&apos;s different</h2></section>
+<ul>
+<li>成為 <a href="http://github.com">GitHub</a> 帝國一員</li>
+<li>已持有主要武器 Git
+<ul><li>在 Terminal 輸入 <code>git</code> 確認</li>
+<li><code>sudo apt-get install git</code></li>
+<li><code>sudo yum install git</code></li></ul></li>
+<li>選擇輔助武器 - 編輯器 (vim, emacs, gedit)</li>
+</ul></section>
+    <section class="slide"><h3>環境設定</h3>
+
+<p><code>git config --global user.email "you@example.com"</code></p>
+
+<p><code>git config --global user.name "Your Name"</code></p>
+
+<p><code>git config --global color.ui true</code></p>
+
+<p><code>git config --global core.editor vim</code></p></section>
+    <section class="slide"><h3>環境設定</h3>
+
+<p><code>git config --global alias.co commit</code></p>
+
+<p><code>git config --global alias.lg "log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit --"</code></p></section>
+    <section class="slide"><h1>.gitconfig</h1>
+
+<h2>Why <code>--global</code>?</h2></section>
+    <section class="slide"><h3>Show branch names in $PS1</h3>
+
+<p><a href="http://xta.github.io/HalloweenBash/" target="_blank">Halloween Bash Profile Generator</a></p>
+
+<p><code>
+function parse_git_branch {<br />
+&nbsp;&nbsp; git branch --no-color 2&gt; /dev/null | sed -e '/^[^*]/d' -e 's/* (.*)/(\1)/' <br />
+}<br />
+</code></p>
+
+<p><code>export PS1="\h:\W \u\$(parse_git_branch)$ "</code></p></section>
     <section class="slide"><h1>開始冒險</h1></section>
     <section class="slide"><div align="right">
     Lv.1 <progress value="0" max="100"></progress>
@@ -901,6 +901,15 @@ function parse_git_branch {<br />
 <li><p><code>git remote</code></p></li>
 <li><p><code>git remote show origin</code></p></li>
 </ul></section>
+    <section class="slide"><div align="center">
+  <img height="500" src="./img/local-remote.png" />
+</div>
+
+<div align="right">
+  <font size="4">
+    <a href="http://zoomq.qiniudn.com/ZQScrapBook/ZqFLOSS/data/20081210180347/" target="_blank">圖片來源</a>
+  </font>
+</div></section>
     <section class="slide"><h3>Push to remote repo</h3>
 
 <ul>
