@@ -56,53 +56,8 @@ output: index.html
 
 --
 
-### 整裝待發
-
-* 成為 [GitHub](http://github.com) 帝國一員
-* 已持有主要武器 Git
-	* 在 Terminal 輸入 `git` 確認
-	* `sudo apt-get install git`
-	* `sudo yum install git`
-* 選擇輔助武器 - 編輯器 (vim, emacs, gedit)
-
---
-
-### 環境設定
-
-`git config --global user.email "you@example.com"`
-
-`git config --global user.name "Your Name"`
-
-`git config --global color.ui true`
-
-`git config --global core.editor vim`
-
---
-
-### 環境設定
-
-`git config --global alias.co commit`
-
-`git config --global alias.lg "log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"`
-
---
-
-# .gitconfig
-## Why `--global`?
-
---
-
-### Show branch names in $PS1
-
-<a href="http://xta.github.io/HalloweenBash/" target="_blank">Halloween Bash Profile Generator</a>
-
-<code>
-function parse\_git\_branch {<br />
-&nbsp;&nbsp; git branch --no-color 2&gt; /dev/null | sed -e '/^[^\*]/d' -e 's/* \(.*\)/(\1)/' <br />
-}<br />
-</code>
-
-`export PS1="\h:\W \u\$(parse_git_branch)$ "`
+# Git / GitHub
+## It&apos;s different
 
 --
 
@@ -596,8 +551,53 @@ function parse\_git\_branch {<br />
 
 --
 
-# Git / GitHub
-## It&apos;s different
+### 整裝待發
+
+* 成為 [GitHub](http://github.com) 帝國一員
+* 已持有主要武器 Git
+	* 在 Terminal 輸入 `git` 確認
+	* `sudo apt-get install git`
+	* `sudo yum install git`
+* 選擇輔助武器 - 編輯器 (vim, emacs, gedit)
+
+--
+
+### 環境設定
+
+`git config --global user.email "you@example.com"`
+
+`git config --global user.name "Your Name"`
+
+`git config --global color.ui true`
+
+`git config --global core.editor vim`
+
+--
+
+### 環境設定
+
+`git config --global alias.co commit`
+
+`git config --global alias.lg "log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"`
+
+--
+
+# .gitconfig
+## Why `--global`?
+
+--
+
+### Show branch names in $PS1
+
+<a href="http://xta.github.io/HalloweenBash/" target="_blank">Halloween Bash Profile Generator</a>
+
+<code>
+function parse\_git\_branch {<br />
+&nbsp;&nbsp; git branch --no-color 2&gt; /dev/null | sed -e '/^[^\*]/d' -e 's/* \(.*\)/(\1)/' <br />
+}<br />
+</code>
+
+`export PS1="\h:\W \u\$(parse_git_branch)$ "`
 
 --
 
@@ -846,6 +846,17 @@ function parse\_git\_branch {<br />
 * `git remote`
 
 * `git remote show origin`
+
+--
+
+<div align="center">
+  <img height="500" src="./img/local-remote.png" />
+</div>
+<div align="right">
+  <font size="4">
+	<a href="http://zoomq.qiniudn.com/ZQScrapBook/ZqFLOSS/data/20081210180347/" target="_blank">圖片來源</a>
+  </font>
+</div>
 
 --
 
