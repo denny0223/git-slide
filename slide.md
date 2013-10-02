@@ -962,7 +962,7 @@ function parse\_git\_branch {<br />
 
 # Git Branch
 <h2>
-  <a hrep="http://nvie.com/posts/a-successful-git-branching-model/" target="_blank">A successful Git branching model</a>
+  <a href="http://nvie.com/posts/a-successful-git-branching-model/" target="_blank">A successful Git branching model</a>
 </h2>
 
 --
