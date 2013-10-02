@@ -60,7 +60,7 @@ output: index.html
 
 * 成為 [GitHub](http://github.com) 帝國一員
 * 已持有主要武器 Git
-	* 在 Termianl 輸入 `git` 確認
+	* 在 Terminal 輸入 `git` 確認
 	* `sudo apt-get install git`
 	* `sudo yum install git`
 * 選擇輔助武器 - 編輯器 (vim, emacs, gedit)
@@ -88,11 +88,11 @@ output: index.html
 --
 
 # .gitconfig
-## If without --global ?
+## Why `--global`?
 
 --
 
-### Show branch name in $PS1
+### Show branch names in $PS1
 
 <a href="http://xta.github.io/HalloweenBash/" target="_blank">Halloween Bash Profile Generator</a>
 
@@ -113,7 +113,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -126,7 +126,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -139,7 +139,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -152,7 +152,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -165,7 +165,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -178,7 +178,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -191,7 +191,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -204,7 +204,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -217,7 +217,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -230,7 +230,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -243,7 +243,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -256,7 +256,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -269,7 +269,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -282,7 +282,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -295,7 +295,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -308,7 +308,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -321,7 +321,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -334,7 +334,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -347,7 +347,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -360,7 +360,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -373,7 +373,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -386,7 +386,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -399,7 +399,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -412,7 +412,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -425,7 +425,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -438,7 +438,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -451,7 +451,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -464,7 +464,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -477,7 +477,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -490,7 +490,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -503,7 +503,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -516,7 +516,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -529,7 +529,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -542,7 +542,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -555,7 +555,7 @@ function parse\_git\_branch {<br />
   <font size="3">
     Source:&nbsp;
 	<a href="https://speakerdeck.com/crboy/code-smart-dont-code-hard" target="_blank">Code Smart, Don&apos;t Code hard</a>&nbsp;
-	By 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
+	by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div>
 
@@ -667,7 +667,7 @@ function parse\_git\_branch {<br />
 	Lv.1 <progress value="20" max="100"></progress>
 </div>
 # Mission 3
-## Create an new repo without initialize
+## Create an new repo without initialization
 
 <br />
 ## Reward: 10 exp
@@ -774,7 +774,7 @@ function parse\_git\_branch {<br />
 
 --
 
-# 何時該 commit ？
+# 何時該 commit？
 
 --
 
@@ -918,7 +918,7 @@ function parse\_git\_branch {<br />
 	Lv.6 <progress value="40" max="100"></progress>
 </div>
 # Mission 6
-## Pull from remtoe repo
+## Pull from remote repo
 ## Resolving conflict
 
 <br />
