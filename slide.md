@@ -1,15 +1,15 @@
-title: HackGen Workshop - 歡迎來到 GitHub 新手村
+title: Git
 output: index.html
 
 --
 
 <h1 style="font-size: 72px">
-  歡迎來到 GitHub 新手村
+	Git
 </h1>
 <br />
 
 ## Denny Huang
-## 2013/10/03
+## 2014/6/23
 
 --
 
@@ -26,14 +26,7 @@ output: index.html
 
 --
 
-<div align="center">
-  <img src="./img/hackgenlogo.jpg" />
-</div>
-## [http://hackgen.sitcon.org/](http://hackgen.sitcon.org/)
-
---
-
-# 歡迎來到新手村
+# Survey
 
 --
 
@@ -62,7 +55,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-37.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-37.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -75,7 +68,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-38.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-38.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -88,7 +81,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-39.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-39.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -101,7 +94,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-40.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-40.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -114,7 +107,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-41.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-41.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -127,7 +120,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-42.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-42.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -140,7 +133,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-43.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-43.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -153,7 +146,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-44.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-44.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -166,7 +159,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-45.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-45.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -179,7 +172,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-46.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-46.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -192,7 +185,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-47.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-47.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -205,7 +198,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-48.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-48.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -218,7 +211,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-49.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-49.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -231,7 +224,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-50.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-50.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -244,7 +237,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-51.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-51.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -257,7 +250,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-52.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-52.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -270,7 +263,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-53.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-53.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -283,7 +276,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-54.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-54.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -296,7 +289,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-55.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-55.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -309,7 +302,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-56.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-56.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -322,7 +315,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-57.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-57.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -335,7 +328,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-58.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-58.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -348,7 +341,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-59.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-59.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -361,7 +354,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-60.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-60.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -374,7 +367,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-61.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-61.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -387,7 +380,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-62.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-62.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -400,7 +393,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-63.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-63.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -413,7 +406,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-64.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-64.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -426,7 +419,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-65.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-65.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -439,7 +432,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-66.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-66.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -452,7 +445,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-67.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-67.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -465,7 +458,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-68.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-68.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -478,7 +471,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-69.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-69.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -491,7 +484,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-70.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-70.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -504,7 +497,7 @@ output: index.html
 --
 
 <div align="center">
-  <img height="500" src="./img/code_smart_release-71.jpg" />
+  <img style="height:500px; width:660px" src="./img/code_smart_release-71.jpg" />
 </div>
 <div align="right">
   <font size="3">
@@ -529,7 +522,7 @@ output: index.html
 
 <div align="center">
   <br />
-  <img src="./img/18333fig0101-tn.png" />
+  <img style="height:500px; width:660px" src="./img/18333fig0101-tn.png" />
 </div>
 
 --
@@ -538,7 +531,7 @@ output: index.html
 
 <div align="center">
   <br />
-  <img src="./img/18333fig0102-tn.png" />
+  <img style="height:500px; width:660px" src="./img/18333fig0102-tn.png" />
 </div>
 
 --
@@ -546,15 +539,15 @@ output: index.html
 ### 分散式版本控制系統
 
 <div align="center">
-  <img height="500" src="./img/18333fig0103-tn.png" />
+  <img style="height:500px; width:660px" src="./img/18333fig0103-tn.png" />
 </div>
 
 --
 
-### 整裝待發
+### 事前準備
 
-* 成為 [GitHub](http://github.com) 帝國一員
-* 已持有主要武器 Git
+* 註冊 [GitHub](http://github.com) 帳號
+* 確認已安裝 Git
 	* 在 Terminal 輸入 `git` 確認
 	* `sudo apt-get install git`
 	* `sudo yum install git`
@@ -601,18 +594,8 @@ function parse\_git\_branch {<br />
 
 --
 
-# 開始冒險
-
---
-
-<div align="right">
-	Lv.1 <progress value="0" max="100"></progress>
-</div>
-# Mission 1
+# Practice 1
 ## Create a new repo
-
-<br />
-## Reward: 10 exp
 
 --
 
@@ -638,46 +621,13 @@ function parse\_git\_branch {<br />
 
 --
 
-<div align="right">
-	Lv.1 <progress value="10" max="100"></progress>
-</div>
-# Mission Complete!
-
---
-
-<div align="right">
-	Lv.1 <progress value="10" max="100"></progress>
-</div>
-# Mission 2
+# Practice 2
 ## Delete the repository
 
-<br />
-## Reward: 10 exp
-
 --
 
-<div align="right">
-	Lv.1 <progress value="20" max="100"></progress>
-</div>
-# Mission Complete!
-
---
-
-<div align="right">
-	Lv.1 <progress value="20" max="100"></progress>
-</div>
-# Mission 3
+# Practice 3
 ## Create an new repo without initialization
-
-<br />
-## Reward: 10 exp
-
---
-
-<div align="right">
-	Lv.1 <progress value="30" max="100"></progress>
-</div>
-# Mission Complete!
 
 --
 
@@ -686,15 +636,22 @@ function parse\_git\_branch {<br />
 
 --
 
-<div align="right">
-	Lv.1 <progress value="30" max="100"></progress>
-</div>
-# Mission 4
-## Create a new local repository
-## and push to github via https
+### Cache https password
+
+`git config --global credential.helper cache`
+
+`git config --global credential.helper "cache --timeout=3600"`
 
 <br />
-## Reward: 470 exp
+<div align="right">
+<a href="http://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typing-when-using-https-github/5343146#5343146">more</a>
+</div>
+
+--
+
+# Practice 4
+## Create a new local repository
+## and push to github via https
 
 --
 
@@ -801,6 +758,19 @@ function parse\_git\_branch {<br />
 
 --
 
+### More about git log
+
+`git log -p`
+
+`git log --stat`
+
+`git log --author="Denny Huang"`
+
+`git log --pretty=%an`
+
+
+--
+
 ### Remove file
 
 * `git rm <file>`
@@ -825,9 +795,13 @@ function parse\_git\_branch {<br />
 
 * `git stash`
 
+* `git stash save "message"`
+
 * `git stash list`
 
 * `git stash pop`
+
+* `git stash show -p <reversion>`
 
 --
 
@@ -844,6 +818,8 @@ function parse\_git\_branch {<br />
 * `git remote add origin https://github.com/denny0223/workshop.git`
 
 * `git remote`
+
+* `git remote -v`
 
 * `git remote show origin`
 
@@ -884,22 +860,9 @@ function parse\_git\_branch {<br />
 
 --
 
-<div align="right">
-	Lv.6 <progress value="0" max="100"></progress>
-</div>
-# Mission Complete!
-
---
-
-<div align="right">
-	Lv.6 <progress value="0" max="100"></progress>
-</div>
-# Mission 5
+# Practice 5
 ## Clone your repo via ssh
 ## try to commit and push
-
-<br />
-## Reward: 40 exp
 
 --
 
@@ -916,24 +879,12 @@ function parse\_git\_branch {<br />
 <h1 style="font-size: 75px">
   <a href="https://help.github.com/articles/generating-ssh-keys" target="_blank">Generating SSH keys</a>
 </h1>
---
-
-<div align="right">
-	Lv.6 <progress value="40" max="100"></progress>
-</div>
-# Mission Complete!
 
 --
 
-<div align="right">
-	Lv.6 <progress value="40" max="100"></progress>
-</div>
-# Mission 6
+# Practice 6
 ## Pull from remote repo
 ## Resolving conflict
-
-<br />
-## Reward: 160 exp
 
 --
 
@@ -955,19 +906,7 @@ function parse\_git\_branch {<br />
 --
 
 # Merge conflict
-
---
-
-<div align="right">
-	Lv.8 <progress value="0" max="100"></progress>
-</div>
-# Mission Complete!
-
---
-
-<h1 style="font-size: 68px">
-  攻城屍們！繼續冒險吧！
-</h1>
+## `git mergetool`
 
 --
 
@@ -978,11 +917,19 @@ function parse\_git\_branch {<br />
 
 --
 
+<h1 style="font-size: 68px">
+  剩下就是你們的事了
+</h1>
+
+--
+
 ### Something useful
 
 * <a href="http://pages.github.com/" target="_blank">GitHub Pages</a>
 
 * <a href="https://github.com/k4rthik/git-cal" target="_blank">git-cal</a>
+
+* <a href="http://pcottle.github.io/learnGitBranching/" target="_blank">Learn Git Branching</a>
 
 ### Just for fun
 
@@ -1008,7 +955,7 @@ function parse\_git\_branch {<br />
 
 <br /><br /><br />
 <div align="center">
-  <img width="100" src="./img/by-sa.png" />
+  <img style="width:100px;" src="./img/by-sa.png" />
 </div>
 <h2 style="font-size: 18px">
 本投影片採用<a href="http://creativecommons.org/licenses/by-sa/3.0/tw/" target="_blank">創用 CC「姓名標示—相同方式分享 3.0 台灣」授權條款</a>

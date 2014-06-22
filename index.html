@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <title>HackGen Workshop - 歡迎來到 GitHub 新手村</title>
+  <title>Git</title>
   <style type="text/css">
     body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -12,29 +12,19 @@
   font-size: 100%;
 }
 
-#wrapper {
-  width: 850px;
+.slide {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+}
+
+.slide-content {
+  width: 800px;
   height: 600px;
   overflow: hidden;
   margin: 80px auto 0 auto;
-}
-
-/* styles for print layout */
-#wrapper.nohide {
-  overflow: auto;
-  height: auto;
-  box-shadow: none;
-}
-
-#wrapper.nohide .slide {
-  margin-bottom: 30px;
-}
-/* /styles */
-
-.slide {
-  width: auto;
-  height: 540px;
   padding: 30px;
+
   font-weight: 200;
   font-size: 200%;
   line-height: 1.375;
@@ -46,7 +36,7 @@
   left: 20px;
 }
 
-.controls .arrow {
+.arrow {
   width: 0; height: 0;
   border: 30px solid #333;
   float: left;
@@ -60,7 +50,7 @@
   user-select: none;
 }
 
-.controls .prev {
+.prev {
   border-top-color: transparent;
   border-bottom-color: transparent;
   border-left-color: transparent;
@@ -69,7 +59,7 @@
   border-right-width: 50px;
 }
 
-.controls .next {
+.next {
   border-top-color: transparent;
   border-bottom-color: transparent;
   border-right-color: transparent;
@@ -78,24 +68,24 @@
   border-right-width: 0;
 }
 
-.controls .prev:hover {
+.prev:hover {
   border-right-color: #888;
   cursor: pointer;
 }
 
-.controls .next:hover {
+.next:hover {
   border-left-color: #888;
   cursor: pointer;
 }
 
-.slide h1 {
+h1 {
   font-size: 300%;
   line-height: 1.2;
   text-align: center;
   margin: 170px 0 0;
 }
 
-.slide h2 {
+h2 {
   font-size: 100%;
   line-height: 1.2;
   margin: 5px 0;
@@ -103,7 +93,7 @@
   font-weight: 200;
 }
 
-.slide h3 {
+h3 {
   font-size: 140%;
   line-height: 1.2;
   border-bottom: 1px solid #aaa;
@@ -111,20 +101,20 @@
   padding-bottom: 15px;
 }
 
-.slide ul {
+ul {
   padding: 20px 0 0 60px;
   font-weight: 200;
   line-height: 1.375;
 }
 
-.slide .author h1.name {
+.author h1 {
   font-size: 170%;
   font-weight: 200;
   text-align: center;
   margin-bottom: 30px;
 }
 
-.slide .author h3 {
+.author h3 {
   font-weight: 100;
   text-align: center;
   font-size: 95%;
@@ -145,14 +135,6 @@ pre {
   line-height: 1.3;
 }
 
-code {
-  background-color: #e7e7e7;
-}
-
-pre > code {
-  background-color: inherit;
-}
-
 .progress {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -164,34 +146,39 @@ pre > code {
   height: 3px;
   background-color: #b4b4b4;
 
-  -webkit-transition: width 0.1s ease-out;
-  -moz-transition: width 0.1s ease-out;
-  -o-transition: width 0.1s ease-out;
-  transition: width 0.1s ease-out;
+  -webkit-transition: width 0.05s ease-out;
+  -moz-transition: width 0.05s ease-out;
+  -o-transition: width 0.05s ease-out;
+  transition: width 0.05s ease-out;
+}
+
+.hidden {
+  display: none;
 }
 
 @media (max-width: 850px) {
-  #wrapper {
-    width: auto;
-  }
 
   body {
     font-size: 70%;
+  }
+
+  .slide-content {
+    width: auto;
   }
 
   img {
     width: 100%;
   }
 
-  .slide h1 {
+  h1 {
     margin-top: 120px;
   }
 
-  .controls .prev, .controls .prev:hover {
+  .prev, .prev:hover {
     border-right-color: rgba(135, 135, 135, 0.5);
   }
 
-  .controls .next, .controls .next:hover {
+  .next, .next:hover {
     border-left-color: rgba(135, 135, 135, 0.5);
   }
 }
@@ -202,35 +189,219 @@ pre > code {
     overflow: hidden;
   }
 
-  #wrapper {
+  .slide-content {
+    padding: 10px;
     margin-top: 10px;
     height: 340px;
   }
 
-  .slide {
-    padding: 10px;
-    height: 340px;
-  }
-
-  .slide h1 {
+  h1 {
     margin-top: 50px;
   }
 
-  .slide ul {
+  ul {
     padding-left: 25px;
   }
+}
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+
+  @page {
+    size: letter;
+  }
+
+  .hidden {
+    display: inline;
+  }
+
+  html {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+
+  body {
+    margin: 0 auto !important;
+    border: 0;
+    padding: 0;
+    float: none !important;
+    overflow: visible;
+    background: none !important;
+    font-size: 52%;
+  }
+
+  .progress, .controls {
+    display: none;
+  }
+
+  .slide {
+    position: static;
+  }
+
+  .slide-content {
+    border: 1px solid #222;
+    margin-top: 0;
+    margin-bottom: 40px;
+    height: 3.5in;
+    overflow: visible;
+  }
+
+  .slide:nth-child(even) {
+    /* 2 slides per page */
+    page-break-before: always;
+  }
+}
+
+/*
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+*/
+
+code, pre {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  overflow: auto;
+  padding: 6px 10px;
+}
+
+code {
+  padding: 0 5px;
+}
+
+pre>code {
+  margin: 0; padding: 0;
+  border: none;
+  background: transparent;
+}
+
+pre .comment,
+pre .template_comment,
+pre .diff .header,
+pre .javadoc {
+  color: #998;
+  font-style: italic
+}
+
+pre .keyword,
+pre .css .rule .keyword,
+pre .winutils,
+pre .javascript .title,
+pre .nginx .title,
+pre .subst,
+pre .request,
+pre .status {
+  color: #333;
+  font-weight: bold
+}
+
+pre .number,
+pre .hexcolor,
+pre .ruby .constant {
+  color: #099;
+}
+
+pre .string,
+pre .tag .value,
+pre .phpdoc,
+pre .tex .formula {
+  color: #d14
+}
+
+pre .title,
+pre .id {
+  color: #900;
+  font-weight: bold
+}
+
+pre .javascript .title,
+pre .lisp .title,
+pre .clojure .title,
+pre .subst {
+  font-weight: normal
+}
+
+pre .class .title,
+pre .haskell .type,
+pre .vhdl .literal,
+pre .tex .command {
+  color: #458;
+  font-weight: bold
+}
+
+pre .tag,
+pre .tag .title,
+pre .rules .property,
+pre .django .tag .keyword {
+  color: #000080;
+  font-weight: normal
+}
+
+pre .attribute,
+pre .variable,
+pre .lisp .body {
+  color: #008080
+}
+
+pre .regexp {
+  color: #009926
+}
+
+pre .class {
+  color: #458;
+  font-weight: bold
+}
+
+pre .symbol,
+pre .ruby .symbol .string,
+pre .lisp .keyword,
+pre .tex .special,
+pre .prompt {
+  color: #990073
+}
+
+pre .built_in,
+pre .lisp .title,
+pre .clojure .built_in {
+  color: #0086b3
+}
+
+pre .preprocessor,
+pre .pi,
+pre .doctype,
+pre .shebang,
+pre .cdata {
+  color: #999;
+  font-weight: bold
+}
+
+pre .deletion {
+  background: #fdd
+}
+
+pre .addition {
+  background: #dfd
+}
+
+pre .diff .change {
+  background: #0086b3
+}
+
+pre .chunk {
+  color: #aaa
 }
 
 
   </style>
   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-39377010-2', 'denny0223.github.io');
-  ga('send', 'pageview');
+    ga('create', 'UA-39377010-6', 'denny0223.github.io');
+    ga('send', 'pageview');
 
   </script>
 </head>
@@ -239,48 +410,61 @@ pre > code {
     <div class="progress-bar"></div>
   </div>
 
-<div id="wrapper">
-    <section class="slide"><h1 style="font-size: 72px">
-  歡迎來到 GitHub 新手村
+  <div class="slide" id="slide-1">
+    <section class="slide-content"><p><h1 style="font-size: 72px">
+    Git
 </h1>
-
+<br /></p>
+<h2 id="denny-huang">Denny Huang</h2>
+<h2 id="2014-6-23">2014/6/23</h2>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-2">
+    <section class="slide-content"><h3 id="who-am-i-">Who am I ?</h3>
 <p><br /></p>
-
-<h2>Denny Huang</h2>
-
-<h2>2013/10/03</h2></section>
-    <section class="slide"><h3>Who am I ?</h3>
-
-<p><br /></p>
-
 <h2 style="font-size: 60px">
   <b>Denny Huang</b>
 </h2>
 
 <ul>
-<li><p>SITCON 2013, 2014 總召</p></li>
-<li><p><a href="http://about.me/denny0223" target="_blank">About me</a></p></li>
-</ul></section>
-    <section class="slide"><div align="center">
-  <img src="./img/hackgenlogo.jpg" />
-</div>
-
-<h2><a href="http://hackgen.sitcon.org/">http://hackgen.sitcon.org/</a></h2></section>
-    <section class="slide"><h1>歡迎來到新手村</h1></section>
-    <section class="slide"><h1>是否寫過程式？</h1></section>
-    <section class="slide"><p><h1>
+<li><p>SITCON 2013, 2014 總召</p>
+</li>
+<li><p><a href="http://about.me/denny0223" target="_blank">About me</a></p>
+</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-3">
+    <section class="slide-content"><h1 id="survey">Survey</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-4">
+    <section class="slide-content"><h1 id="-">是否寫過程式？</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-5">
+    <section class="slide-content"><p><h1>
 小專題/中大型<br />
-專案開發經驗
-<h1></p></section>
-    <section class="slide"><h1>版本控制經驗</h1></section>
-    <section class="slide"><h1>Shell 熟悉程度</h1></section>
-    <section class="slide"><h1>Git / GitHub</h1>
-
-<h2>It&apos;s different</h2></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-37.jpg" />
+專案開發經驗</p>
+<h1></section>
+  </div>
+  <div class="slide hidden" id="slide-6">
+    <section class="slide-content"><h1 id="-">版本控制經驗</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-7">
+    <section class="slide-content"><h1 id="shell-">Shell 熟悉程度</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-8">
+    <section class="slide-content"><h1 id="git-github">Git / GitHub</h1>
+<h2 id="it-apos-s-different">It&apos;s different</h2>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-9">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-37.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -288,10 +472,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-38.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-10">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-38.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -299,10 +484,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-39.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-11">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-39.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -310,10 +496,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-40.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-12">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-40.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -321,10 +508,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-41.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-13">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-41.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -332,10 +520,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-42.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-14">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-42.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -343,10 +532,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-43.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-15">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-43.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -354,10 +544,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-44.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-16">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-44.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -365,10 +556,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-45.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-17">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-45.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -376,10 +568,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-46.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-18">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-46.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -387,10 +580,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-47.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-19">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-47.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -398,10 +592,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-48.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-20">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-48.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -409,10 +604,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-49.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-21">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-49.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -420,10 +616,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-50.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-22">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-50.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -431,10 +628,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-51.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-23">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-51.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -442,10 +640,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-52.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-24">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-52.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -453,10 +652,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-53.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-25">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-53.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -464,10 +664,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-54.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-26">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-54.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -475,10 +676,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-55.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-27">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-55.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -486,10 +688,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-56.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-28">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-56.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -497,10 +700,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-57.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-29">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-57.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -508,10 +712,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-58.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-30">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-58.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -519,10 +724,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-59.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-31">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-59.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -530,10 +736,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-60.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-32">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-60.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -541,10 +748,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-61.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-33">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-61.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -552,10 +760,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-62.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-34">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-62.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -563,10 +772,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-63.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-35">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-63.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -574,10 +784,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-64.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-36">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-64.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -585,10 +796,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-65.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-37">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-65.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -596,10 +808,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-66.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-38">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-66.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -607,10 +820,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-67.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-39">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-67.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -618,10 +832,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-68.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-40">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-68.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -629,10 +844,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-69.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-41">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-69.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -640,10 +856,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-70.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-42">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-70.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -651,10 +868,11 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><div align="center">
-  <img height="500" src="./img/code_smart_release-71.jpg" />
+  </div>
+  <div class="slide hidden" id="slide-43">
+    <section class="slide-content"><div align="center">
+  <img style="height:500px; width:660px" src="./img/code_smart_release-71.jpg" />
 </div>
-
 <div align="right">
   <font size="3">
     Source:&nbsp;
@@ -662,525 +880,607 @@ pre > code {
     by 畢玉泉(CrBoy)&lt;crboy@crboy.net&gt;
   </font>
 </div></section>
-    <section class="slide"><h3>攻城屍的救星</h3>
-
-<h1>版本控制</h1></section>
-    <section class="slide"><h1>版本控制類型</h1></section>
-    <section class="slide"><h3>本地端版本控制</h3>
-
+  </div>
+  <div class="slide hidden" id="slide-44">
+    <section class="slide-content"><h3 id="-">攻城屍的救星</h3>
+<h1 id="-">版本控制</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-45">
+    <section class="slide-content"><h1 id="-">版本控制類型</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-46">
+    <section class="slide-content"><h3 id="-">本地端版本控制</h3>
 <div align="center">
   <br />
-  <img src="./img/18333fig0101-tn.png" />
+  <img style="height:500px; width:660px" src="./img/18333fig0101-tn.png" />
 </div></section>
-    <section class="slide"><h3>集中式版本控制系統</h3>
-
+  </div>
+  <div class="slide hidden" id="slide-47">
+    <section class="slide-content"><h3 id="-">集中式版本控制系統</h3>
 <div align="center">
   <br />
-  <img src="./img/18333fig0102-tn.png" />
+  <img style="height:500px; width:660px" src="./img/18333fig0102-tn.png" />
 </div></section>
-    <section class="slide"><h3>分散式版本控制系統</h3>
-
+  </div>
+  <div class="slide hidden" id="slide-48">
+    <section class="slide-content"><h3 id="-">分散式版本控制系統</h3>
 <div align="center">
-  <img height="500" src="./img/18333fig0103-tn.png" />
+  <img style="height:500px; width:660px" src="./img/18333fig0103-tn.png" />
 </div></section>
-    <section class="slide"><h3>整裝待發</h3>
-
+  </div>
+  <div class="slide hidden" id="slide-49">
+    <section class="slide-content"><h3 id="-">事前準備</h3>
 <ul>
-<li>成為 <a href="http://github.com">GitHub</a> 帝國一員</li>
-<li>已持有主要武器 Git
-<ul><li>在 Terminal 輸入 <code>git</code> 確認</li>
+<li>註冊 <a href="http://github.com">GitHub</a> 帳號</li>
+<li>確認已安裝 Git<ul>
+<li>在 Terminal 輸入 <code>git</code> 確認</li>
 <li><code>sudo apt-get install git</code></li>
-<li><code>sudo yum install git</code></li></ul></li>
+<li><code>sudo yum install git</code></li>
+</ul>
+</li>
 <li>選擇輔助武器 - 編輯器 (vim, emacs, gedit)</li>
-</ul></section>
-    <section class="slide"><h3>環境設定</h3>
-
-<p><code>git config --global user.email "you@example.com"</code></p>
-
-<p><code>git config --global user.name "Your Name"</code></p>
-
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-50">
+    <section class="slide-content"><h3 id="-">環境設定</h3>
+<p><code>git config --global user.email &quot;you@example.com&quot;</code></p>
+<p><code>git config --global user.name &quot;Your Name&quot;</code></p>
 <p><code>git config --global color.ui true</code></p>
-
-<p><code>git config --global core.editor vim</code></p></section>
-    <section class="slide"><h3>環境設定</h3>
-
+<p><code>git config --global core.editor vim</code></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-51">
+    <section class="slide-content"><h3 id="-">環境設定</h3>
 <p><code>git config --global alias.co commit</code></p>
-
-<p><code>git config --global alias.lg "log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit --"</code></p></section>
-    <section class="slide"><h1>.gitconfig</h1>
-
-<h2>Why <code>--global</code>?</h2></section>
-    <section class="slide"><h3>Show branch names in $PS1</h3>
-
+<p><code>git config --global alias.lg &quot;log --color --graph --all --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit --&quot;</code></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-52">
+    <section class="slide-content"><h1 id="-gitconfig">.gitconfig</h1>
+<h2 id="why-global-">Why <code>--global</code>?</h2>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-53">
+    <section class="slide-content"><h3 id="show-branch-names-in-ps1">Show branch names in $PS1</h3>
 <p><a href="http://xta.github.io/HalloweenBash/" target="_blank">Halloween Bash Profile Generator</a></p>
-
 <p><code>
 function parse_git_branch {<br />
-&nbsp;&nbsp; git branch --no-color 2&gt; /dev/null | sed -e '/^[^*]/d' -e 's/* (.*)/(\1)/' <br />
+&nbsp;&nbsp; git branch --no-color 2&gt; /dev/null | sed -e &#39;/^[^*]/d&#39; -e &#39;s/<em> (.</em>)/(\1)/&#39; <br />
 }<br />
 </code></p>
-
-<p><code>export PS1="\h:\W \u\$(parse_git_branch)$ "</code></p></section>
-    <section class="slide"><h1>開始冒險</h1></section>
-    <section class="slide"><div align="right">
-    Lv.1 <progress value="0" max="100"></progress>
-</div>
-
-<h1>Mission 1</h1>
-
-<h2>Create a new repo</h2>
-
-<p><br /></p>
-
-<h2>Reward: 10 exp</h2></section>
-    <section class="slide"><h1>Public / Private</h1>
-
+<p><code>export PS1=&quot;\h:\W \u\$(parse_git_branch)$ &quot;</code></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-54">
+    <section class="slide-content"><h1 id="practice-1">Practice 1</h1>
+<h2 id="create-a-new-repo">Create a new repo</h2>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-55">
+    <section class="slide-content"><h1 id="public-private">Public / Private</h1>
 <div align="center">
-  <a href="http://github.com/edu" target="_blank">http://github.com/edu</a>
+  <a href="http://github.com/edu" target="_blank"><a href="http://github.com/edu">http://github.com/edu</a></a>
 </div></section>
-    <section class="slide"><h1>README.md</h1>
-
+  </div>
+  <div class="slide hidden" id="slide-56">
+    <section class="slide-content"><h1 id="readme-md">README.md</h1>
 <div align="center">
   <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a>
 </div></section>
-    <section class="slide"><h1>.gitignore</h1></section>
-    <section class="slide"><h1>License</h1></section>
-    <section class="slide"><div align="right">
-    Lv.1 <progress value="10" max="100"></progress>
-</div>
-
-<h1>Mission Complete!</h1></section>
-    <section class="slide"><div align="right">
-    Lv.1 <progress value="10" max="100"></progress>
-</div>
-
-<h1>Mission 2</h1>
-
-<h2>Delete the repository</h2>
-
+  </div>
+  <div class="slide hidden" id="slide-57">
+    <section class="slide-content"><h1 id="-gitignore">.gitignore</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-58">
+    <section class="slide-content"><h1 id="license">License</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-59">
+    <section class="slide-content"><h1 id="practice-2">Practice 2</h1>
+<h2 id="delete-the-repository">Delete the repository</h2>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-60">
+    <section class="slide-content"><h1 id="practice-3">Practice 3</h1>
+<h2 id="create-an-new-repo-without-initialization">Create an new repo without initialization</h2>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-61">
+    <section class="slide-content"><h1 id="about-protocol">About protocol</h1>
+<h2 id="https-ssh">https / ssh</h2>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-62">
+    <section class="slide-content"><h3 id="cache-https-password">Cache https password</h3>
+<p><code>git config --global credential.helper cache</code></p>
+<p><code>git config --global credential.helper &quot;cache --timeout=3600&quot;</code></p>
 <p><br /></p>
-
-<h2>Reward: 10 exp</h2></section>
-    <section class="slide"><div align="right">
-    Lv.1 <progress value="20" max="100"></progress>
-</div>
-
-<h1>Mission Complete!</h1></section>
-    <section class="slide"><div align="right">
-    Lv.1 <progress value="20" max="100"></progress>
-</div>
-
-<h1>Mission 3</h1>
-
-<h2>Create an new repo without initialization</h2>
-
-<p><br /></p>
-
-<h2>Reward: 10 exp</h2></section>
-    <section class="slide"><div align="right">
-    Lv.1 <progress value="30" max="100"></progress>
-</div>
-
-<h1>Mission Complete!</h1></section>
-    <section class="slide"><h1>About protocol</h1>
-
-<h2>https / ssh</h2></section>
-    <section class="slide"><div align="right">
-    Lv.1 <progress value="30" max="100"></progress>
-</div>
-
-<h1>Mission 4</h1>
-
-<h2>Create a new local repository</h2>
-
-<h2>and push to github via https</h2>
-
-<p><br /></p>
-
-<h2>Reward: 470 exp</h2></section>
-    <section class="slide"><p><h1 style="font-size: 72px">
+<div align="right">
+<a href="http://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typing-when-using-https-github/5343146#5343146">more</a>
+</div></section>
+  </div>
+  <div class="slide hidden" id="slide-63">
+    <section class="slide-content"><h1 id="practice-4">Practice 4</h1>
+<h2 id="create-a-new-local-repository">Create a new local repository</h2>
+<h2 id="and-push-to-github-via-https">and push to github via https</h2>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-64">
+    <section class="slide-content"><p><h1 style="font-size: 72px">
   <code>git help &lt;command&gt;</code>
-</command></p></section>
-    <section class="slide"><h1><code>git init</code></h1></section>
-    <section class="slide"><h1><code>touch README.md</code></h1></section>
-    <section class="slide"><h1><code>git status</code></h1></section>
-    <section class="slide"><div align="center">
+</command></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-65">
+    <section class="slide-content"><h1 id="-git-init-"><code>git init</code></h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-66">
+    <section class="slide-content"><h1 id="-touch-readme-md-"><code>touch README.md</code></h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-67">
+    <section class="slide-content"><h1 id="-git-status-"><code>git status</code></h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-68">
+    <section class="slide-content"><div align="center">
   <img src="./img/index1@2x.png" />
 </div>
-
 <div align="right">
   <font size="4">
     <a href="http://git-scm.com/about/staging-area" target="_blank">圖片來源</a>
   </font>
 </div></section>
-    <section class="slide"><div align="center">
+  </div>
+  <div class="slide hidden" id="slide-69">
+    <section class="slide-content"><div align="center">
   <img src="./img/index2@2x.png" />
 </div>
-
 <div align="right">
   <font size="4">
     <a href="http://git-scm.com/about/staging-area" target="_blank">圖片來源</a>
   </font>
 </div></section>
-    <section class="slide"><h3>Add file to staging area</h3>
-
+  </div>
+  <div class="slide hidden" id="slide-70">
+    <section class="slide-content"><h3 id="add-file-to-staging-area">Add file to staging area</h3>
 <ul>
-<li><p><code>git add README.md</code></p></li>
-<li><p><code>git add .</code></p></li>
-</ul></section>
-    <section class="slide"><h3>Untrack file</h3>
-
+<li><p><code>git add README.md</code></p>
+</li>
+<li><p><code>git add .</code></p>
+</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-71">
+    <section class="slide-content"><h3 id="untrack-file">Untrack file</h3>
 <ul>
 <li><code>git rm --cached &lt;file&gt;</code></li>
 </ul>
-
-<h3>Unstage file</h3>
-
+<h3 id="unstage-file">Unstage file</h3>
 <ul>
 <li><code>git reset &lt;file&gt;</code></li>
-</ul></section>
-    <section class="slide"><h3>Before commit</h3>
-
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-72">
+    <section class="slide-content"><h3 id="before-commit">Before commit</h3>
 <ul>
-<li><p><code>git status</code></p></li>
-<li><p><code>git diff</code></p></li>
-</ul></section>
-    <section class="slide"><h3>Commit</h3>
-
+<li><p><code>git status</code></p>
+</li>
+<li><p><code>git diff</code></p>
+</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-73">
+    <section class="slide-content"><h3 id="commit">Commit</h3>
 <ul>
-<li><p><code>git commit</code></p></li>
-<li><p><code>git commit -m "first commit"</code></p></li>
-<li><p><code>git commit --amend</code></p></li>
-</ul></section>
-    <section class="slide"><h1>何時該 commit？</h1></section>
-    <section class="slide"><h1 style="font-size: 72px">
+<li><p><code>git commit</code></p>
+</li>
+<li><p><code>git commit -m &quot;first commit&quot;</code></p>
+</li>
+<li><p><code>git commit --amend</code></p>
+</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-74">
+    <section class="slide-content"><h1 id="-commit-">何時該 commit？</h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-75">
+    <section class="slide-content"><h1 style="font-size: 72px">
   commit log 怎麼寫？
 </h1></section>
-    <section class="slide"><h3>Show commit log</h3>
-
+  </div>
+  <div class="slide hidden" id="slide-76">
+    <section class="slide-content"><h3 id="show-commit-log">Show commit log</h3>
 <ul>
-<li><p><code>git log</code></p></li>
-<li><p><code>git show &lt;revisions&gt;</code></p></li>
-</ul></section>
-    <section class="slide"><h1 style="font-size: 60px">
+<li><p><code>git log</code></p>
+</li>
+<li><p><code>git show &lt;revisions&gt;</code></p>
+</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-77">
+    <section class="slide-content"><p><h1 style="font-size: 60px">
   SPECIFYING REVISIONS
-</h1>
-
+</h1></p>
 <div align="center">
   <a href="https://www.kernel.org/pub/software/scm/git/docs/gitrevisions.html" target="_blank">gitrevisions(7) Manual Page</a>
 </div></section>
-    <section class="slide"><h3>Remove file</h3>
-
+  </div>
+  <div class="slide hidden" id="slide-78">
+    <section class="slide-content"><h3 id="more-about-git-log">More about git log</h3>
+<p><code>git log -p</code></p>
+<p><code>git log --stat</code></p>
+<p><code>git log --author=&quot;Denny Huang&quot;</code></p>
+<p><code>git log --pretty=%an</code></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-79">
+    <section class="slide-content"><h3 id="remove-file">Remove file</h3>
 <ul>
 <li><code>git rm &lt;file&gt;</code></li>
 </ul>
-
-<h3>Rename file</h3>
-
+<h3 id="rename-file">Rename file</h3>
 <ul>
 <li><code>git mv &lt;file&gt;</code></li>
-</ul></section>
-    <section class="slide"><h3>Checkout to previous version</h3>
-
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-80">
+    <section class="slide-content"><h3 id="checkout-to-previous-version">Checkout to previous version</h3>
 <ul>
 <li><code>git checkout &lt;reversion&gt;</code></li>
 </ul>
-
-<h3>Checkout file from previous version</h3>
-
+<h3 id="checkout-file-from-previous-version">Checkout file from previous version</h3>
 <ul>
 <li><code>git checkout &lt;reversion&gt; &lt;file&gt;</code></li>
-</ul></section>
-    <section class="slide"><h3>Stash files</h3>
-
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-81">
+    <section class="slide-content"><h3 id="stash-files">Stash files</h3>
 <ul>
-<li><p><code>git stash</code></p></li>
-<li><p><code>git stash list</code></p></li>
-<li><p><code>git stash pop</code></p></li>
-</ul></section>
-    <section class="slide"><h3>Reset to previous version</h3>
-
+<li><p><code>git stash</code></p>
+</li>
+<li><p><code>git stash save &quot;message&quot;</code></p>
+</li>
+<li><p><code>git stash list</code></p>
+</li>
+<li><p><code>git stash pop</code></p>
+</li>
+<li><p><code>git stash show -p &lt;reversion&gt;</code></p>
+</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-82">
+    <section class="slide-content"><h3 id="reset-to-previous-version">Reset to previous version</h3>
 <ul>
-<li><p><code>git reset &lt;reversion&gt;</code></p></li>
-<li><p><code>git reset --hard &lt;reversion&gt;</code></p></li>
-</ul></section>
-    <section class="slide"><h3>Add remote repo</h3>
-
+<li><p><code>git reset &lt;reversion&gt;</code></p>
+</li>
+<li><p><code>git reset --hard &lt;reversion&gt;</code></p>
+</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-83">
+    <section class="slide-content"><h3 id="add-remote-repo">Add remote repo</h3>
 <ul>
-<li><p><code>git remote add origin https://github.com/denny0223/workshop.git</code></p></li>
-<li><p><code>git remote</code></p></li>
-<li><p><code>git remote show origin</code></p></li>
-</ul></section>
-    <section class="slide"><div align="center">
+<li><p><code>git remote add origin https://github.com/denny0223/workshop.git</code></p>
+</li>
+<li><p><code>git remote</code></p>
+</li>
+<li><p><code>git remote -v</code></p>
+</li>
+<li><p><code>git remote show origin</code></p>
+</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-84">
+    <section class="slide-content"><div align="center">
   <img height="500" src="./img/local-remote.png" />
 </div>
-
 <div align="right">
   <font size="4">
     <a href="http://zoomq.qiniudn.com/ZQScrapBook/ZqFLOSS/data/20081210180347/" target="_blank">圖片來源</a>
   </font>
 </div></section>
-    <section class="slide"><h3>Push to remote repo</h3>
-
+  </div>
+  <div class="slide hidden" id="slide-85">
+    <section class="slide-content"><h3 id="push-to-remote-repo">Push to remote repo</h3>
 <ul>
-<li><p><code>git push -u origin master</code></p></li>
-<li><p><code>git push origin master</code></p></li>
-<li><p><code>git push</code></p></li>
-<li><p><a href="http://stackoverflow.com/a/13148313" target="_blank">push.default</a></p></li>
-</ul></section>
-    <section class="slide"><h3>List branches</h3>
-
+<li><p><code>git push -u origin master</code></p>
+</li>
+<li><p><code>git push origin master</code></p>
+</li>
+<li><p><code>git push</code></p>
+</li>
+<li><p><a href="http://stackoverflow.com/a/13148313" target="_blank">push.default</a></p>
+</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-86">
+    <section class="slide-content"><h3 id="list-branches">List branches</h3>
 <ul>
-<li><p><code>git branch</code></p></li>
-<li><p><code>git branch -a</code></p></li>
-<li><p><code>git branch -v</code></p></li>
-<li><p><code>git branch -vv</code></p></li>
-</ul></section>
-    <section class="slide"><div align="right">
-    Lv.6 <progress value="0" max="100"></progress>
-</div>
-
-<h1>Mission Complete!</h1></section>
-    <section class="slide"><div align="right">
-    Lv.6 <progress value="0" max="100"></progress>
-</div>
-
-<h1>Mission 5</h1>
-
-<h2>Clone your repo via ssh</h2>
-
-<h2>try to commit and push</h2>
-
-<p><br /></p>
-
-<h2>Reward: 40 exp</h2></section>
-    <section class="slide"><h1><code>git clone</code></h1></section>
-    <section class="slide"><p><br /><br /><br /></p>
-
-<h2>Please make sure you have the correct access rights</h2>
-
-<h2>and the repository exists.</h2></section>
-    <section class="slide"><h1 style="font-size: 75px">
+<li><p><code>git branch</code></p>
+</li>
+<li><p><code>git branch -a</code></p>
+</li>
+<li><p><code>git branch -v</code></p>
+</li>
+<li><p><code>git branch -vv</code></p>
+</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-87">
+    <section class="slide-content"><h1 id="practice-5">Practice 5</h1>
+<h2 id="clone-your-repo-via-ssh">Clone your repo via ssh</h2>
+<h2 id="try-to-commit-and-push">try to commit and push</h2>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-88">
+    <section class="slide-content"><h1 id="-git-clone-"><code>git clone</code></h1>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-89">
+    <section class="slide-content"><p><br /><br /><br /></p>
+<h2 id="please-make-sure-you-have-the-correct-access-rights">Please make sure you have the correct access rights</h2>
+<h2 id="and-the-repository-exists-">and the repository exists.</h2>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-90">
+    <section class="slide-content"><h1 style="font-size: 75px">
   <a href="https://help.github.com/articles/generating-ssh-keys" target="_blank">Generating SSH keys</a>
 </h1></section>
-    <section class="slide"><div align="right">
-    Lv.6 <progress value="40" max="100"></progress>
-</div>
-
-<h1>Mission Complete!</h1></section>
-    <section class="slide"><div align="right">
-    Lv.6 <progress value="40" max="100"></progress>
-</div>
-
-<h1>Mission 6</h1>
-
-<h2>Pull from remote repo</h2>
-
-<h2>Resolving conflict</h2>
-
-<p><br /></p>
-
-<h2>Reward: 160 exp</h2></section>
-    <section class="slide"><h1 style="font-size: 36px">
+  </div>
+  <div class="slide hidden" id="slide-91">
+    <section class="slide-content"><h1 id="practice-6">Practice 6</h1>
+<h2 id="pull-from-remote-repo">Pull from remote repo</h2>
+<h2 id="resolving-conflict">Resolving conflict</h2>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-92">
+    <section class="slide-content"><h1 style="font-size: 36px">
   Add a new commit at remote via https repo.
 </h1></section>
-    <section class="slide"><h1><code>git pull</code></h1>
-
-<h2><code>git fetch</code> + <code>git merge</code></h2></section>
-    <section class="slide"><h1 style="font-size: 72px">
+  </div>
+  <div class="slide hidden" id="slide-93">
+    <section class="slide-content"><h1 id="-git-pull-"><code>git pull</code></h1>
+<h2 id="-git-fetch-git-merge-"><code>git fetch</code> + <code>git merge</code></h2>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-94">
+    <section class="slide-content"><h1 style="font-size: 72px">
   <code>git pull --rebase</code>
 </h1></section>
-    <section class="slide"><h1>Merge conflict</h1></section>
-    <section class="slide"><div align="right">
-    Lv.8 <progress value="0" max="100"></progress>
-</div>
-
-<h1>Mission Complete!</h1></section>
-    <section class="slide"><h1 style="font-size: 68px">
-  攻城屍們！繼續冒險吧！
-</h1></section>
-    <section class="slide"><h1>Git Branch</h1>
-
+  </div>
+  <div class="slide hidden" id="slide-95">
+    <section class="slide-content"><h1 id="merge-conflict">Merge conflict</h1>
+<h2 id="-git-mergetool-"><code>git mergetool</code></h2>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-96">
+    <section class="slide-content"><h1 id="git-branch">Git Branch</h1>
 <h2>
   <a href="http://nvie.com/posts/a-successful-git-branching-model/" target="_blank">A successful Git branching model</a>
 </h2></section>
-    <section class="slide"><h3>Something useful</h3>
-
+  </div>
+  <div class="slide hidden" id="slide-97">
+    <section class="slide-content"><h1 style="font-size: 68px">
+  剩下就是你們的事了
+</h1></section>
+  </div>
+  <div class="slide hidden" id="slide-98">
+    <section class="slide-content"><h3 id="something-useful">Something useful</h3>
 <ul>
-<li><p><a href="http://pages.github.com/" target="_blank">GitHub Pages</a></p></li>
-<li><p><a href="https://github.com/k4rthik/git-cal" target="_blank">git-cal</a></p></li>
+<li><p><a href="http://pages.github.com/" target="_blank">GitHub Pages</a></p>
+</li>
+<li><p><a href="https://github.com/k4rthik/git-cal" target="_blank">git-cal</a></p>
+</li>
+<li><p><a href="http://pcottle.github.io/learnGitBranching/" target="_blank">Learn Git Branching</a></p>
+</li>
 </ul>
-
-<h3>Just for fun</h3>
-
+<h3 id="just-for-fun">Just for fun</h3>
 <ul>
 <li><a href="https://github.com/gelstudios/gitfiti" target="_blank">gitfiti</a></li>
-</ul></section>
-    <section class="slide"><h3>Resources</h3>
-
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-99">
+    <section class="slide-content"><h3 id="resources">Resources</h3>
 <ul>
-<li><p><a href="http://git-scm.com/book" target="_blank">Pro Git</a></p></li>
-<li><p><a href="http://git-scm.com/book/zh-tw" target="_blank">Pro Git (zh-tw)</a></p></li>
-<li><p><a href="http://ihower.tw/git/" target="_blank">版本控制系統 Git 精要</a></p></li>
-<li><p><a href="http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_tw/" target="_blank">Git Magic</a></p></li>
-</ul></section>
-    <section class="slide"><h1 style="font-size: 72px">
+<li><p><a href="http://git-scm.com/book" target="_blank">Pro Git</a></p>
+</li>
+<li><p><a href="http://git-scm.com/book/zh-tw" target="_blank">Pro Git (zh-tw)</a></p>
+</li>
+<li><p><a href="http://ihower.tw/git/" target="_blank">版本控制系統 Git 精要</a></p>
+</li>
+<li><p><a href="http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_tw/" target="_blank">Git Magic</a></p>
+</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-100">
+    <section class="slide-content"><h1 style="font-size: 72px">
   Thanks for listening!
 </h1>
 
 <p><br /><br /><br /></p>
-
-<div align="center">
-  <img width="100" src="./img/by-sa.png" />
-</div>
-
+<p><div align="center">
+  <img style="width:100px;" src="./img/by-sa.png" />
+</div></p>
 <h2 style="font-size: 18px">
 本投影片採用<a href="http://creativecommons.org/licenses/by-sa/3.0/tw/" target="_blank">創用 CC「姓名標示—相同方式分享 3.0 台灣」授權條款</a>
 </h2></section>
-</div>
+  </div>
+
   <div class="controls">
     <div class="arrow prev"></div>
     <div class="arrow next"></div>
   </div>
 
-<script type="text/javascript">
-  /**
- * Takes the last slide and places it at the front.
+
+  <script type="text/javascript">
+    /**
+ * Returns the current page number of the presentation.
  */
-function goBack() {
-  var wrapper = document.querySelector('#wrapper');
-  var lastSlide = wrapper.lastChild;
-  while (lastSlide != null && lastSlide.nodeType !== 1) {
-    lastSlide = lastSlide.previousSibling;
-  }
-
-  wrapper.removeChild(lastSlide);
-  wrapper.insertBefore(lastSlide, wrapper.firstChild);
-
-  setCurrentProgress();
-  updateURL();
+function currentPosition() {
+  return parseInt(document.querySelector('.slide:not(.hidden)').id.slice(6));
 }
+
 
 /**
- * Takes the first slide and places it at the end.
+ * Navigates forward n pages
+ * If n is negative, we will navigate in reverse
  */
-function goForward() {
-  var wrapper = document.querySelector('#wrapper');
-  var firstSlide = wrapper.firstChild;
-  while (firstSlide != null && firstSlide.nodeType !== 1) {
-    firstSlide = firstSlide.nextSibling;
-  }
+function navigate(n) {
+  var position = currentPosition();
+  var numSlides = document.getElementsByClassName('slide').length;
 
-  wrapper.removeChild(firstSlide);
-  wrapper.appendChild(firstSlide);
+  /* Positions are 1-indexed, so we need to add and subtract 1 */
+  var nextPosition = (position - 1 + n) % numSlides + 1;
 
-  setCurrentProgress();
+  /* Normalize nextPosition in-case of a negative modulo result */
+  nextPosition = (nextPosition - 1 + numSlides) % numSlides + 1;
+
+  document.getElementById('slide-' + position).classList.add('hidden');
+  document.getElementById('slide-' + nextPosition).classList.remove('hidden');
+
+  updateProgress();
   updateURL();
+  updateTabIndex();
 }
+
 
 /**
  * Updates the current URL to include a hashtag of the current page number.
  */
 function updateURL() {
-  window.history.replaceState({} , null, '#' + currentPage());
+  window.history.replaceState({} , null, '#' + currentPosition());
 }
 
-/**
- * Returns the current page number of the presentation.
- */
-function currentPage() {
-  return document.querySelector('#wrapper .slide').dataset.page;
-}
 
 /**
- * Returns a NodeList of each .slide element.
+ * Sets the progress indicator.
  */
-function allSlides() {
-  return document.querySelectorAll('#wrapper .slide');
-}
-
-/**
- * Give each slide a "page" data attribute.
- */
-function setPageNumbers() {
-  var wrapper = document.querySelector('#wrapper');
-  var pages   = wrapper.querySelectorAll('section');
-  var page;
-
-  for (var i = 0; i < pages.length; ++i) {
-    page = pages[i];
-    page.dataset.page = i;
-  }
-}
-
-/**
- * Set the current progress indicator.
- */
-function setCurrentProgress() {
-  var wrapper = document.querySelector('#wrapper');
+function updateProgress() {
   var progressBar = document.querySelector('.progress-bar');
 
   if (progressBar !== null) {
-    var pagesNumber    = wrapper.querySelectorAll('section').length;
-    var currentNumber  = parseInt(currentPage());
-    var currentPercent = pagesNumber === 1 ? 100 : 100 * currentNumber / (pagesNumber - 1);
-    progressBar.style.width = currentPercent.toString() + '%';
+    var numSlides = document.getElementsByClassName('slide').length;
+    var position = currentPosition() - 1;
+    var percent = (numSlides === 1) ? 100 : 100 * position / (numSlides - 1);
+    progressBar.style.width = percent.toString() + '%';
+  }
+}
+
+
+/**
+ * Removes tabindex property from all links on the current slide, sets
+ * tabindex = -1 for all links on other slides. Prevents slides from appearing
+ * out of control.
+ */
+function updateTabIndex() {
+  var allLinks = document.querySelectorAll('.slide a');
+  var position = currentPosition();
+  var currentPageLinks = document.getElementById('slide-' + position).querySelectorAll('a');
+  var i;
+
+  for (i = 0; i < allLinks.length; i++) {
+    allLinks[i].setAttribute('tabindex', -1);
+  }
+
+  for (i = 0; i < currentPageLinks.length; i++) {
+    currentPageLinks[i].removeAttribute('tabindex');
   }
 }
 
 /**
- * Go to the specified page of content.
+ * Determines whether or not we are currently in full screen mode
  */
-function goToPage(page) {
-  // Try to find the target slide.
-  var targetSlide = document.querySelector('#wrapper .slide[data-page="' + page + '"]');
-
-  // If it actually exists, go forward until we find it.
-  if (targetSlide) {
-    var numSlides = allSlides().length;
-
-    for (var i = 0; currentPage() != page && i < numSlides; i++) {
-      goForward();
-    }
-  }
+function isFullScreen() {
+  return document.fullscreenElement ||
+         document.mozFullScreenElement ||
+         document.webkitFullscreenElement ||
+         document.msFullscreenElement;
 }
 
-window.onload = function () {
+/**
+ * Toggle fullScreen mode on document element.
+ * Works on chrome (>= 15), firefox (>= 9), ie (>= 11), opera(>= 12.1), safari (>= 5).
+ */
+function toggleFullScreen() {
+  /* Convenient renames */
+  var docElem = document.documentElement;
+  var doc = document;
 
-  // Give each slide a "page" data attribute.
-  setPageNumbers();
+  docElem.requestFullscreen =
+      docElem.requestFullscreen ||
+      docElem.msRequestFullscreen ||
+      docElem.mozRequestFullScreen ||
+      docElem.webkitRequestFullscreen.bind(docElem, Element.ALLOW_KEYBOARD_INPUT);
+
+  doc.exitFullscreen =
+      doc.exitFullscreen ||
+      doc.msExitFullscreen ||
+      doc.mozCancelFullScreen ||
+      doc.webkitExitFullscreen;
+
+  isFullScreen() ? doc.exitFullscreen() : docElem.requestFullscreen();
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Update the tabindex to prevent weird slide transitioning
+  updateTabIndex();
 
   // If the location hash specifies a page number, go to it.
   var page = window.location.hash.slice(1);
-  if (page) goToPage(page);
+  if (page) {
+    navigate(parseInt(page) - 1);
+  }
 
   document.onkeydown = function (e) {
     var kc = e.keyCode;
 
-    // left, down, H, J, backspace - BACK
-    // up, right, K, L, space, enter - FORWARD
-    if (kc == 37 || kc == 40 || kc == 8 || kc == 72 || kc == 74) {
-      goBack();
-    } else if (kc == 38 || kc == 39 || kc == 13 || kc == 32 || kc == 75 || kc == 76) {
-      goForward();
+    // left, down, H, J, backspace, PgUp - BACK
+    // up, right, K, L, space, PgDn - FORWARD
+    // enter - FULLSCREEN
+    if (kc === 37 || kc === 40 || kc === 8 || kc === 72 || kc === 74 || kc === 33) {
+      navigate(-1);
+    } else if (kc === 38 || kc === 39 || kc === 32 || kc === 75 || kc === 76 || kc === 34) {
+      navigate(1);
+    } else if (kc === 13) {
+      toggleFullScreen();
     }
-  }
+  };
 
   if (document.querySelector('.next') && document.querySelector('.prev')) {
     document.querySelector('.next').onclick = function (e) {
       e.preventDefault();
-      goForward();
-    }
+      navigate(1);
+    };
 
     document.querySelector('.prev').onclick = function (e) {
       e.preventDefault();
-      goBack();
-    }
+      navigate(-1);
+    };
   }
+});
 
-}
 
-</script>
-
+  </script>
 </body>
 </html>
