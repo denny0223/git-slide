@@ -9,7 +9,7 @@ output: index.html
 <br />
 
 ## Denny Huang
-## 2014/6/23
+## 2014/08/11
 
 --
 
@@ -594,8 +594,8 @@ function parse\_git\_branch {<br />
 
 --
 
-# Practice 1
-## Create a new repo
+# Practice
+## Create a new repo on GitHub
 
 --
 
@@ -621,37 +621,18 @@ function parse\_git\_branch {<br />
 
 --
 
-# Practice 2
+# Practice
 ## Delete the repository
 
 --
 
-# Practice 3
+# Practice
 ## Create an new repo without initialization
 
 --
 
-# About protocol
-## https / ssh
-
---
-
-### Cache https password
-
-`git config --global credential.helper cache`
-
-`git config --global credential.helper "cache --timeout=3600"`
-
-<br />
-<div align="right">
-<a href="http://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typing-when-using-https-github/5343146#5343146">more</a>
-</div>
-
---
-
-# Practice 4
+# Practice
 ## Create a new local repository
-## and push to github via https
 
 --
 
@@ -665,11 +646,8 @@ function parse\_git\_branch {<br />
 
 --
 
-# `touch README.md`
-
---
-
-# `git status`
+# Practice
+## Add file to staging area
 
 --
 
@@ -684,14 +662,11 @@ function parse\_git\_branch {<br />
 
 --
 
-<div align="center">
-  <img src="./img/index2@2x.png" />
-</div>
-<div align="right">
-  <font size="4">
-	<a href="http://git-scm.com/about/staging-area" target="_blank">圖片來源</a>
-  </font>
-</div>
+# `touch README.md`
+
+--
+
+# `git status`
 
 --
 
@@ -703,13 +678,29 @@ function parse\_git\_branch {<br />
 
 --
 
-### Untrack file
+# .gitkeep
 
-* `git rm --cached <file>`
+--
 
 ### Unstage file
 
 * `git reset <file>`
+
+--
+
+# Practice
+## Commit to repository
+
+--
+
+<div align="center">
+  <img src="./img/index1@2x.png" />
+</div>
+<div align="right">
+  <font size="4">
+	<a href="http://git-scm.com/about/staging-area" target="_blank">圖片來源</a>
+  </font>
+</div>
 
 --
 
@@ -719,6 +710,8 @@ function parse\_git\_branch {<br />
 
 * `git diff`
 
+* `git diff --cached`
+
 --
 
 ### Commit
@@ -726,8 +719,6 @@ function parse\_git\_branch {<br />
 * `git commit`
 
 * `git commit -m "first commit"`
-
-* `git commit --amend`
 
 --
 
@@ -738,6 +729,34 @@ function parse\_git\_branch {<br />
 <h1 style="font-size: 72px">
   commit log 怎麼寫？
 </h1>
+
+--
+
+### Patch commit
+
+* `git add --patch`
+
+* `git commit --patch`
+
+--
+
+# `git commit -a`
+
+--
+
+<div align="center">
+  <img src="./img/index2@2x.png" />
+</div>
+<div align="right">
+  <font size="4">
+	<a href="http://git-scm.com/about/staging-area" target="_blank">圖片來源</a>
+  </font>
+</div>
+
+--
+
+# Practice
+## Show commit message
 
 --
 
@@ -758,16 +777,8 @@ function parse\_git\_branch {<br />
 
 --
 
-### More about git log
-
-`git log -p`
-
-`git log --stat`
-
-`git log --author="Denny Huang"`
-
-`git log --pretty=%an`
-
+# Practice
+## Untrack / Rename file
 
 --
 
@@ -775,9 +786,20 @@ function parse\_git\_branch {<br />
 
 * `git rm <file>`
 
+### Untrack file
+
+* `git rm --cached <file>`
+
+--
+
 ### Rename file
 
 * `git mv <file>`
+
+--
+
+# Practice
+## Back to the past
 
 --
 
@@ -810,6 +832,17 @@ function parse\_git\_branch {<br />
 * `git reset <reversion>`
 
 * `git reset --hard <reversion>`
+
+--
+
+### Revert commit
+
+* `git revert <reversion>`
+
+--
+
+# Practice
+## Push to remote server
 
 --
 
@@ -848,19 +881,20 @@ function parse\_git\_branch {<br />
 
 --
 
-### List branches
+### Cache https password
 
-* `git branch`
+`git config --global credential.helper cache`
 
-* `git branch -a`
+`git config --global credential.helper "cache --timeout=3600"`
 
-* `git branch -v`
-
-* `git branch -vv`
+<br />
+<div align="right">
+<a href="http://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typing-when-using-https-github/5343146#5343146">more</a>
+</div>
 
 --
 
-# Practice 5
+# Practice
 ## Clone your repo via ssh
 ## try to commit and push
 
@@ -882,7 +916,7 @@ function parse\_git\_branch {<br />
 
 --
 
-# Practice 6
+# Practice
 ## Pull from remote repo
 ## Resolving conflict
 
@@ -899,21 +933,232 @@ function parse\_git\_branch {<br />
 
 --
 
+# Merge conflict
+## `git mergetool`
+
+--
+
 <h1 style="font-size: 72px">
   <code>git pull --rebase</code>
 </h1>
 
 --
 
-# Merge conflict
-## `git mergetool`
+# Branch
 
 --
 
-# Git Branch
+<div align="center">
+  <img style="width:450px" src="./img/git_branching_model.png" />
+</div>
+
+--
+
+# Practice
+## Create a branch
+
+--
+
+### Create a branch
+
+* `git branch <branch name>`
+
+* `git checkout -b <branch name>`
+
+--
+
+### List branches
+
+* `git branch`
+
+* `git branch -a`
+
+* `git branch -v`
+
+* `git branch -vv`
+
+--
+
+# Practice
+## commit and push new branch to remote
+
+--
+
+### Push when local and remote branch name difference
+
+* `git push <remote> <local_branch_name>:<remote_branch_name>`
+
+--
+
+# Git Flow
 <h2>
   <a href="http://nvie.com/posts/a-successful-git-branching-model/" target="_blank">A successful Git branching model</a>
 </h2>
+
+--
+
+<div align="center">
+  <img style="width:450px" src="./img/git_branching_model.png" />
+</div>
+
+--
+
+# Practice
+## merge branches
+
+--
+
+### Merge
+
+* `git merge`
+
+* `git merge --no-ff`
+
+--
+
+### Cherry-pick
+
+* `git cherry-pick <reversion>`
+
+--
+
+### How Git works?
+
+`inotifywait -rm --format '%w%f %e' -e create -e close_write .`
+
+`git init`
+
+`echo test > file`
+
+`git add file`
+
+--
+
+### 9daeafb9864cf43055ae93beb0afd6c7d144bfa4
+
+* SHA1 of "blob 5␀test␊"
+
+* `printf "blob 5\000test\n" | xxd`
+
+* `printf "blob 5\000test\n" | shasum`
+
+* `echo test | git hash-object --stdin`
+
+* `git cat-file -p 9daeafb9864cf43055ae93beb0afd6c7d144bfa4`
+
+--
+
+### cat-file -p &lt;reversion&gt;
+
+`git cat-file -p 8b9af3b`
+
+
+```
+tree 993624220e92bb14b1703b6005dccfda913e95bc
+parent a5d55500219b63ac21bb3977ae1a69bf5f1f793f
+author Denny Huang <denny0223@gmail.com> 1407702807 +0800
+committer Denny Huang <denny0223@gmail.com> 1407702807 +0800
+
+update
+```
+
+--
+
+# Practice
+## Modify you commit
+
+--
+
+### Modify commit history
+
+`git commit --amend`
+
+`git commit --amend --date="Mar 15 00:00 2014"`
+
+`git rebase -i <reversion>`
+
+--
+
+### Useful skill
+
+* `git reflog`
+
+--
+
+# Practice
+## Trace log
+
+--
+
+### More about diff
+
+* `git diff <reversion>`
+
+* `git diff master@{2014-07-01}`
+
+* `git diff master@{"1 month ago"}`
+
+--
+
+### More about git log
+
+* `git log -p --stat`
+
+* `git log --oneline`
+
+* `git log --graph`
+
+* `git log --abbrev-commit`
+
+* `git log --pretty=%an`
+
+* `git whatchanged`
+
+--
+
+### Limit
+
+* `git log --author="Denny Huang"`
+
+* `git log --since={2014-07-01} --until="1 week ago"`
+
+### search by regex
+
+* `git log -p -i -G 'regex'`
+
+--
+
+### Who wrote this code?
+
+* `git blame <filepath>`
+
+--
+
+### Create a bare repo
+
+* `git init --bare`
+
+* `git clone ///path/to/repo`
+
+* `git clone ssh://[username]@[host]:[port]/path/to/repo`
+
+--
+
+### Add hooks
+
+* `.git/hooks/`
+
+* `git help githooks`
+
+* <a href="http://git-scm.com/book/en/Customizing-Git-Git-Hooks" target="_blank">more</a>
+
+--
+
+# Issue tracking system
+
+--
+
+# Continuous Integration (CI)
 
 --
 
