@@ -9,7 +9,7 @@ output: index.html
 <br />
 
 ## Denny Huang
-## 2014/08/11
+## 2014/10/24
 
 --
 
@@ -601,7 +601,7 @@ function parse\_git\_branch {<br />
 
 # Public / Private
 <div align="center">
-  <a href="http://github.com/edu" target="_blank">http://github.com/edu</a>
+  <a href="https://education.github.com/pack" target="_blank">Student Developer Pack</a>
 </div>
 
 --
@@ -609,15 +609,22 @@ function parse\_git\_branch {<br />
 # README.md
 <div align="center">
   <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a>
+  <a href="https://guides.github.com/features/mastering-markdown/" target="_blank">Mastering Markdown</a>
 </div>
 
 --
 
 # .gitignore
+<div align="center">
+  <a href="https://github.com/github/gitignore" target="_blank">collection of useful .gitignore templates</a>
+</div>
 
 --
 
 # License
+<div align="center">
+  <a href="http://www.openfoundry.org/tw/licenses" target="_blank">授權條款介紹 - OpenFoundry</a>
+</div>
 
 --
 
@@ -654,6 +661,9 @@ function parse\_git\_branch {<br />
 <div align="center">
   <img src="./img/index1@2x.png" />
 </div>
+<div align="left">
+  <a style="font-size: 25px" href="javascript: jumpPrePage()">back</a>
+</div>
 <div align="right">
   <font size="4">
 	<a href="http://git-scm.com/about/staging-area" target="_blank">圖片來源</a>
@@ -686,20 +696,20 @@ function parse\_git\_branch {<br />
 
 * `git reset <file>`
 
+<br />
+<br />
+<br />
+<div align="right">
+  <a style="font-size: 25px" href="javascript: jumpPage(65)">img</a>
+</div>
+
 --
 
 # Practice
 ## Commit to repository
 
---
-
-<div align="center">
-  <img src="./img/index1@2x.png" />
-</div>
 <div align="right">
-  <font size="4">
-	<a href="http://git-scm.com/about/staging-area" target="_blank">圖片來源</a>
-  </font>
+  <a style="font-size: 25px" href="javascript: jumpPage(65)">img</a>
 </div>
 
 --
@@ -729,6 +739,12 @@ function parse\_git\_branch {<br />
 <h1 style="font-size: 72px">
   commit log 怎麼寫？
 </h1>
+<div align="center">
+  <a style="font-size: 30px" href="./img/yo.png" target="_blank">yo</a>
+</div>
+<div align="right">
+  <a style="font-size: 15px" href="http://www.reddit.com/r/shittyprogramming/comments/1skq3s/my_buddy_is_a_phenomenal_programmer_but_really/" target="_blank">圖片來源</a>
+</div>
 
 --
 
@@ -881,6 +897,18 @@ function parse\_git\_branch {<br />
 
 --
 
+### List branches
+
+* `git branch`
+
+* `git branch -a`
+
+* `git branch -v`
+
+* `git branch -vv`
+
+--
+
 ### Cache https password
 
 `git config --global credential.helper cache`
@@ -964,18 +992,6 @@ function parse\_git\_branch {<br />
 * `git branch <branch name>`
 
 * `git checkout -b <branch name>`
-
---
-
-### List branches
-
-* `git branch`
-
-* `git branch -a`
-
-* `git branch -v`
-
-* `git branch -vv`
 
 --
 
@@ -1175,6 +1191,16 @@ update
 * <a href="https://github.com/k4rthik/git-cal" target="_blank">git-cal</a>
 
 * <a href="http://pcottle.github.io/learnGitBranching/" target="_blank">Learn Git Branching</a>
+
+--
+
+### Something useful (cnt.
+
+* <a href="https://guides.github.com/" target="_blank">GitHub Guides</a>
+
+* <a href="https://github.com/jlord/git-it/blob/master/README-zhtw.md" target="_blank">Git-it</a>
+
+* <a href="http://onlywei.github.io/explain-git-with-d3/" target="_blank">Visualizing Git Concepts with D3</a>
 
 ### Just for fun
 
