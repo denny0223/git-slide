@@ -1184,11 +1184,11 @@ function parse_git_branch {<br />
   <div class="slide hidden" id="slide-86">
     <section class="slide-content"><h3 id="checkout-to-previous-version">Checkout to previous version</h3>
 <ul>
-<li><code>git checkout &lt;reversion&gt;</code></li>
+<li><code>git checkout &lt;revision&gt;</code></li>
 </ul>
 <h3 id="checkout-file-from-previous-version">Checkout file from previous version</h3>
 <ul>
-<li><code>git checkout &lt;reversion&gt; &lt;file&gt;</code></li>
+<li><code>git checkout &lt;revision&gt; &lt;file&gt;</code></li>
 </ul>
 </section>
   </div>
@@ -1203,7 +1203,7 @@ function parse_git_branch {<br />
 </li>
 <li><p><code>git stash pop</code></p>
 </li>
-<li><p><code>git stash show -p &lt;reversion&gt;</code></p>
+<li><p><code>git stash show -p &lt;revision&gt;</code></p>
 </li>
 </ul>
 </section>
@@ -1211,9 +1211,9 @@ function parse_git_branch {<br />
   <div class="slide hidden" id="slide-88">
     <section class="slide-content"><h3 id="reset-to-previous-version">Reset to previous version</h3>
 <ul>
-<li><p><code>git reset &lt;reversion&gt;</code></p>
+<li><p><code>git reset &lt;revision&gt;</code></p>
 </li>
-<li><p><code>git reset --hard &lt;reversion&gt;</code></p>
+<li><p><code>git reset --hard &lt;revision&gt;</code></p>
 </li>
 </ul>
 </section>
@@ -1221,7 +1221,7 @@ function parse_git_branch {<br />
   <div class="slide hidden" id="slide-89">
     <section class="slide-content"><h3 id="revert-commit">Revert commit</h3>
 <ul>
-<li><code>git revert &lt;reversion&gt;</code></li>
+<li><code>git revert &lt;revision&gt;</code></li>
 </ul>
 </section>
   </div>
@@ -1403,7 +1403,7 @@ function parse_git_branch {<br />
   <div class="slide hidden" id="slide-115">
     <section class="slide-content"><h3 id="cherry-pick">Cherry-pick</h3>
 <ul>
-<li><code>git cherry-pick &lt;reversion&gt;</code></li>
+<li><code>git cherry-pick &lt;revision&gt;</code></li>
 </ul>
 </section>
   </div>
@@ -1432,7 +1432,7 @@ function parse_git_branch {<br />
 </section>
   </div>
   <div class="slide hidden" id="slide-118">
-    <section class="slide-content"><h3 id="cat-file-p-lt-reversion-gt-">cat-file -p &lt;reversion&gt;</h3>
+    <section class="slide-content"><h3 id="cat-file-p-lt-revision-gt-">cat-file -p &lt;revision&gt;</h3>
 <p><code>git cat-file -p 8b9af3b</code></p>
 <pre><code>tree 993624220e92bb14b1703b6005dccfda913e95bc
 parent a5d55500219b63ac21bb3977ae1a69bf5f1f793f
@@ -1451,7 +1451,7 @@ update</code></pre>
     <section class="slide-content"><h3 id="modify-commit-history">Modify commit history</h3>
 <p><code>git commit --amend</code></p>
 <p><code>git commit --amend --date=&quot;Mar 15 00:00 2014&quot;</code></p>
-<p><code>git rebase -i &lt;reversion&gt;</code></p>
+<p><code>git rebase -i &lt;revision&gt;</code></p>
 </section>
   </div>
   <div class="slide hidden" id="slide-121">
@@ -1469,7 +1469,7 @@ update</code></pre>
   <div class="slide hidden" id="slide-123">
     <section class="slide-content"><h3 id="more-about-diff">More about diff</h3>
 <ul>
-<li><p><code>git diff &lt;reversion&gt;</code></p>
+<li><p><code>git diff &lt;revision&gt;</code></p>
 </li>
 <li><p><code>git diff master@{2014-07-01}</code></p>
 </li>
