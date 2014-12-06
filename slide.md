@@ -9,7 +9,7 @@ output: index.html
 <br />
 
 ## Denny Huang
-## 2014/10/24
+## 2014/12/07
 
 --
 
@@ -748,14 +748,6 @@ function parse\_git\_branch {<br />
 
 --
 
-### Patch commit
-
-* `git add --patch`
-
-* `git commit --patch`
-
---
-
 # `git commit -a`
 
 --
@@ -1064,6 +1056,22 @@ function parse\_git\_branch {<br />
 
 --
 
+* `cd .git/objects/9d/`
+
+``` python
+[denny@X230 9d]$ python
+Python 2.7.5 (default, Nov  3 2014, 14:26:24)
+[GCC 4.8.3 20140911 (Red Hat 4.8.3-7)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> fd = open("aeafb9864cf43055ae93beb0afd6c7d144bfa4", "rb")
+>>> line = fd.read()
+>>> import zlib
+>>> zlib.decompress(line)
+'blob 5\x00test\n'
+```
+
+--
+
 ### cat-file -p &lt;revision&gt;
 
 `git cat-file -p 8b9af3b`
@@ -1077,6 +1085,13 @@ committer Denny Huang <denny0223@gmail.com> 1407702807 +0800
 
 update
 ```
+--
+
+### Patch commit
+
+* `git add --patch`
+
+* `git commit --patch`
 
 --
 
@@ -1217,6 +1232,14 @@ update
 * <a href="http://ihower.tw/git/" target="_blank">版本控制系統 Git 精要</a>
 
 * <a href="http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_tw/" target="_blank">Git Magic</a>
+
+--
+
+## Resources (cnt.
+
+* <a href="http://backlogtool.com/git-guide/en/" target="_blank">Git Beginner's Guide for Dummies</a>
+
+* <a href="http://backlogtool.com/git-guide//tw/" target="_blank">連猴子都能懂的Git入門〜掌握版本控制〜</a>
 
 --
 
