@@ -1237,7 +1237,7 @@ function parse\_git\_branch {<br />
 
 ## Resources (cnt.
 
-* <a href="http://backlogtool.com/git-guide/en/" target="_blank">Git Beginner's Guide for Dummies</a>
+* <a href="http://backlogtool.com/git-guide/en/" target="_blank">Git Beginner&#39;s Guide for Dummies</a>
 
 * <a href="http://backlogtool.com/git-guide//tw/" target="_blank">連猴子都能懂的Git入門〜掌握版本控制〜</a>
 
@@ -1254,3 +1254,4 @@ function parse\_git\_branch {<br />
 <h2 style="font-size: 18px">
 本投影片採用<a href="http://creativecommons.org/licenses/by-sa/3.0/tw/" target="_blank">創用 CC「姓名標示—相同方式分享 3.0 台灣」授權條款</a>
 </h2>
+
