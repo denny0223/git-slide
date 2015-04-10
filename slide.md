@@ -9,7 +9,7 @@ output: index.html
 <br />
 
 ## Denny Huang
-## 2014/12/07
+## 2015/4/11
 
 --
 
@@ -580,20 +580,6 @@ output: index.html
 
 --
 
-### Show branch names in $PS1
-
-<a href="http://xta.github.io/HalloweenBash/" target="_blank">Halloween Bash Profile Generator</a>
-
-<code>
-function parse\_git\_branch {<br />
-&nbsp;&nbsp; git branch --no-color 2&gt; /dev/null | sed -e '/^[^\*]/d' -e 's/* \(.*\)/(\1)/' <br />
-}<br />
-</code>
-
-`export PS1="\h:\W \u\$(parse_git_branch)$ "`
-
---
-
 # Practice
 ## Create a new repo on GitHub
 
@@ -700,7 +686,7 @@ function parse\_git\_branch {<br />
 <br />
 <br />
 <div align="right">
-  <a style="font-size: 25px" href="javascript: jumpPage(65)">img</a>
+  <a style="font-size: 25px" href="javascript: jumpPage(64)">img</a>
 </div>
 
 --
@@ -709,7 +695,7 @@ function parse\_git\_branch {<br />
 ## Commit to repository
 
 <div align="right">
-  <a style="font-size: 25px" href="javascript: jumpPage(65)">img</a>
+  <a style="font-size: 25px" href="javascript: jumpPage(64)">img</a>
 </div>
 
 --
@@ -1220,6 +1206,20 @@ update
 ### Just for fun
 
 * <a href="https://github.com/gelstudios/gitfiti" target="_blank">gitfiti</a>
+
+--
+
+### Show branch names in $PS1
+
+<a href="http://xta.github.io/HalloweenBash/" target="_blank">Halloween Bash Profile Generator</a>
+
+<code>
+function parse\_git\_branch {<br />
+&nbsp;&nbsp; git branch --no-color 2&gt; /dev/null | sed -e '/^[^\*]/d' -e 's/* \(.*\)/(\1)/' <br />
+}<br />
+</code>
+
+`export PS1="\h:\W \u\$(parse_git_branch)$ "`
 
 --
 
