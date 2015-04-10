@@ -1151,6 +1151,16 @@ update
 
 --
 
+### Hosting a Git server
+
+* bare repo
+
+* <a href="http://gogs.io/" target="_blank">Gogs</a>
+
+* <a href="https://about.gitlab.com/" target="_blank">GitLab</a>
+
+--
+
 ### Create a bare repo
 
 * `git init --bare`
