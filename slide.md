@@ -1204,6 +1204,8 @@ update
 
 * <a href="http://pcottle.github.io/learnGitBranching/" target="_blank">Learn Git Branching</a>
 
+* <a href="https://github.com/JuanitoFatas/git-style-guide/blob/master/README.md" target="_blank">git-style-guide</a>
+
 --
 
 ### Something useful (cnt.
