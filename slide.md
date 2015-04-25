@@ -1245,7 +1245,7 @@ function parse\_git\_branch {<br />
 
 --
 
-## Resources (cnt.
+### Resources (cnt.
 
 * <a href="http://backlogtool.com/git-guide/en/" target="_blank">Git Beginner&#39;s Guide for Dummies</a>
 
