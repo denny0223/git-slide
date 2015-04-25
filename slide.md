@@ -602,7 +602,8 @@ output: index.html
 
 # .gitignore
 <div align="center">
-  <a href="https://github.com/github/gitignore" target="_blank">collection of useful .gitignore templates</a>
+  <a href="https://github.com/github/gitignore" target="_blank">collection of useful .gitignore templates</a><br />
+  <a href="https://git-lfs.github.com/" target="_blank">Git Large File Storage</a>
 </div>
 
 --
