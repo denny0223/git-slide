@@ -675,10 +675,6 @@ output: index.html
 
 --
 
-# .gitkeep
-
---
-
 ### Unstage file
 
 * `git reset <file>`
@@ -925,7 +921,6 @@ output: index.html
 
 # Practice
 ## Pull from remote repo
-## Resolving conflict
 
 --
 
@@ -937,11 +932,6 @@ output: index.html
 
 # `git pull`
 ## `git fetch` + `git merge`
-
---
-
-# Merge conflict
-## `git mergetool`
 
 --
 
@@ -958,6 +948,12 @@ output: index.html
 <div align="center">
   <img style="width:450px" src="./img/git_branching_model.png" />
 </div>
+
+--
+
+<a href="http://pages.github.com/" target="_blank">
+  <h1>GitHub Pages</h1>
+</a>
 
 --
 
