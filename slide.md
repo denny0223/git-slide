@@ -9,7 +9,7 @@ output: index.html
 <br />
 
 ## Denny Huang
-## 2015/8/3
+## 2016/11/30
 
 --
 
@@ -19,6 +19,8 @@ output: index.html
 <h2 style="font-size: 60px">
   <b>Denny Huang</b>
 </h2>
+
+* 雷亞遊戲 Rayark Inc.
 
 * SITCON 2013, 2014 總召
 
