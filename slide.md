@@ -834,6 +834,14 @@ output: index.html
 
 --
 
+### Remove untracked files
+
+* `git clean -f`
+
+* `git clean -d`
+
+--
+
 # Practice
 ## Push to remote server
 
@@ -1009,9 +1017,202 @@ output: index.html
 
 --
 
+# Practice
+## Delete branches
+
+--
+
+### Delete branch
+
+* `git branch -d <branch>`
+
+* `git branch -D <branch>`
+
+* `git push <remote> :<branch>`
+
+* `git fetch -p`
+
+--
+
+### Move branch refs
+
+* `git branch -f <branch>`
+
+* `git branch -f <branch> <revision>`
+
+--
+
+# Practice
+## Trace log
+
+--
+
+### More about diff
+
+* `git diff <revision>`
+
+* `git diff master@{2014-07-01}`
+
+* `git diff master@{"1 month ago"}`
+
+--
+
+### More about git log
+
+* `git log -p --stat`
+
+* `git log --oneline`
+
+* `git log --graph`
+
+* `git log --abbrev-commit`
+
+* `git log --pretty=%an`
+
+* `git whatchanged`
+
+--
+
+### Limit
+
+* `git log --author="Denny Huang"`
+
+* `git log --since={2014-07-01} --until="1 week ago"`
+
+### search by regex
+
+* `git log -p -i -G 'regex'`
+
+--
+
+### Who wrote this code?
+
+* `git blame <filepath>`
+
+--
+
+### Use binary search to find the commit that introduced a bug
+
+* `git bisect start`
+
+* `git bisect bad`
+
+* `git bisect good v1.0`
+
+--
+
+### Tag
+
+* `git tag <tagname>`
+
+* `git push <remote> <tagname>`
+
+* `git tag -d <tagname>`
+
+* `git push <remote> :<tagname>`
+
+* <a href="https://help.github.com/categories/releases/" target="_blank">Release on GitHub</a>
+
+--
+
+### Rebase
+
+* `git rebase`
+
+--
+
 ### Cherry-pick
 
 * `git cherry-pick <revision>`
+
+--
+
+### Parch file
+
+* `git format-patch`
+
+* `git am <patch_file>`
+
+--
+
+### Submodule
+
+* `git submodule add <repo>
+
+* `git submodule init`
+
+* `git submodule update`
+
+* `git submodule foreach git pull origin master`
+
+--
+
+### Patch commit
+
+* `git add --patch`
+
+* `git commit --patch`
+
+--
+
+# Practice
+## Modify you commit
+
+--
+
+### Modify commit history
+
+`git commit --amend`
+
+`git commit --amend --date="Mar 15 00:00 2014"`
+
+`git rebase -i <revision>`
+
+--
+
+### Useful skill
+
+* `git reflog`
+
+* `git fsck`
+
+--
+
+### Hosting a Git server
+
+* bare repo
+
+* <a href="http://gogs.io/" target="_blank">Gogs</a>
+
+* <a href="https://about.gitlab.com/" target="_blank">GitLab</a>
+
+--
+
+### Create a bare repo
+
+* `git init --bare`
+
+* `git clone ///path/to/repo`
+
+* `git clone ssh://[username]@[host]:[port]/path/to/repo`
+
+--
+
+### Add hooks
+
+* `.git/hooks/`
+
+* `git help githooks`
+
+* <a href="http://git-scm.com/book/en/Customizing-Git-Git-Hooks" target="_blank">more</a>
+
+--
+
+### Rewrite branches
+
+* `git filter-branch`
+
+* <a href="https://help.github.com/articles/remove-sensitive-data/" target="_blank">Remove sensitive data</a>
 
 --
 
@@ -1070,114 +1271,6 @@ committer Denny Huang <denny0223@gmail.com> 1407702807 +0800
 
 update
 ```
---
-
-### Patch commit
-
-* `git add --patch`
-
-* `git commit --patch`
-
---
-
-# Practice
-## Modify you commit
-
---
-
-### Modify commit history
-
-`git commit --amend`
-
-`git commit --amend --date="Mar 15 00:00 2014"`
-
-`git rebase -i <revision>`
-
---
-
-### Useful skill
-
-* `git reflog`
-
---
-
-# Practice
-## Trace log
-
---
-
-### More about diff
-
-* `git diff <revision>`
-
-* `git diff master@{2014-07-01}`
-
-* `git diff master@{"1 month ago"}`
-
---
-
-### More about git log
-
-* `git log -p --stat`
-
-* `git log --oneline`
-
-* `git log --graph`
-
-* `git log --abbrev-commit`
-
-* `git log --pretty=%an`
-
-* `git whatchanged`
-
---
-
-### Limit
-
-* `git log --author="Denny Huang"`
-
-* `git log --since={2014-07-01} --until="1 week ago"`
-
-### search by regex
-
-* `git log -p -i -G 'regex'`
-
---
-
-### Who wrote this code?
-
-* `git blame <filepath>`
-
---
-
-### Hosting a Git server
-
-* bare repo
-
-* <a href="http://gogs.io/" target="_blank">Gogs</a>
-
-* <a href="https://about.gitlab.com/" target="_blank">GitLab</a>
-
---
-
-### Create a bare repo
-
-* `git init --bare`
-
-* `git clone ///path/to/repo`
-
-* `git clone ssh://[username]@[host]:[port]/path/to/repo`
-
---
-
-### Add hooks
-
-* `.git/hooks/`
-
-* `git help githooks`
-
-* <a href="http://git-scm.com/book/en/Customizing-Git-Git-Hooks" target="_blank">more</a>
-
 --
 
 # Issue tracking system
@@ -1251,6 +1344,8 @@ function parse\_git\_branch {<br />
 * <a href="http://backlogtool.com/git-guide/en/" target="_blank">Git Beginner&#39;s Guide for Dummies</a>
 
 * <a href="http://backlogtool.com/git-guide//tw/" target="_blank">連猴子都能懂的Git入門〜掌握版本控制〜</a>
+
+* <a href="http://www.slideshare.net/ihower/git-40877359" target="_blank">Git 版本控制系統 -- 從微觀到宏觀</a>
 
 --
 
