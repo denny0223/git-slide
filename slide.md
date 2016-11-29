@@ -1137,7 +1137,7 @@ output: index.html
 
 ### Submodule
 
-* `git submodule add <repo>
+* `git submodule add <repo>`
 
 * `git submodule init`
 
@@ -1162,11 +1162,11 @@ output: index.html
 
 ### Modify commit history
 
-`git commit --amend`
+* `git commit --amend`
 
-`git commit --amend --date="Mar 15 00:00 2014"`
+* `git commit --amend --date="Mar 15 00:00 2014"`
 
-`git rebase -i <revision>`
+* `git rebase -i <revision>`
 
 --
 
@@ -1218,13 +1218,13 @@ output: index.html
 
 ### How Git works?
 
-`inotifywait -rm --format '%w%f %e' -e create -e close_write .`
+* `inotifywait -rm --format '%w%f %e' -e create -e close_write .`
 
-`git init`
+* `git init`
 
-`echo test > file`
+* `echo test > file`
 
-`git add file`
+* `git add file`
 
 --
 
@@ -1242,7 +1242,7 @@ output: index.html
 
 --
 
-* `cd .git/objects/9d/`
+`cd .git/objects/9d/`
 
 ``` python
 [denny@X230 9d]$ python

@@ -1491,7 +1491,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   <div class="slide hidden" id="slide-126">
     <section class="slide-content"><h3 id="submodule">Submodule</h3>
 <ul>
-<li><p>`git submodule add <repo></p>
+<li><p><code>git submodule add &lt;repo&gt;</code></p>
 </li>
 <li><p><code>git submodule init</code></p>
 </li>
@@ -1519,9 +1519,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   </div>
   <div class="slide hidden" id="slide-129">
     <section class="slide-content"><h3 id="modify-commit-history">Modify commit history</h3>
-<p><code>git commit --amend</code></p>
-<p><code>git commit --amend --date=&quot;Mar 15 00:00 2014&quot;</code></p>
-<p><code>git rebase -i &lt;revision&gt;</code></p>
+<ul>
+<li><p><code>git commit --amend</code></p>
+</li>
+<li><p><code>git commit --amend --date=&quot;Mar 15 00:00 2014&quot;</code></p>
+</li>
+<li><p><code>git rebase -i &lt;revision&gt;</code></p>
+</li>
+</ul>
 </section>
   </div>
   <div class="slide hidden" id="slide-130">
@@ -1582,10 +1587,16 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   </div>
   <div class="slide hidden" id="slide-135">
     <section class="slide-content"><h3 id="how-git-works-">How Git works?</h3>
-<p><code>inotifywait -rm --format &#39;%w%f %e&#39; -e create -e close_write .</code></p>
-<p><code>git init</code></p>
-<p><code>echo test &gt; file</code></p>
-<p><code>git add file</code></p>
+<ul>
+<li><p><code>inotifywait -rm --format &#39;%w%f %e&#39; -e create -e close_write .</code></p>
+</li>
+<li><p><code>git init</code></p>
+</li>
+<li><p><code>echo test &gt; file</code></p>
+</li>
+<li><p><code>git add file</code></p>
+</li>
+</ul>
 </section>
   </div>
   <div class="slide hidden" id="slide-136">
@@ -1605,9 +1616,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </section>
   </div>
   <div class="slide hidden" id="slide-137">
-    <section class="slide-content"><ul>
-<li><code>cd .git/objects/9d/</code></li>
-</ul>
+    <section class="slide-content"><p><code>cd .git/objects/9d/</code></p>
 <pre><code class="lang-python">[denny@X230 <span class="hljs-number">9</span>d]$ python
 Python <span class="hljs-number">2.7</span><span class="hljs-number">.5</span> (default, Nov  <span class="hljs-number">3</span> <span class="hljs-number">2014</span>, <span class="hljs-number">14</span>:<span class="hljs-number">26</span>:<span class="hljs-number">24</span>)
 [GCC <span class="hljs-number">4.8</span><span class="hljs-number">.3</span> <span class="hljs-number">20140911</span> (Red Hat <span class="hljs-number">4.8</span><span class="hljs-number">.3</span><span class="hljs-number">-7</span>)] on linux2
