@@ -677,6 +677,10 @@ output: index.html
 
 --
 
+# .gitkeep
+
+--
+
 ### Unstage file
 
 * `git reset <file>`
@@ -870,18 +874,6 @@ output: index.html
 
 --
 
-### Push to remote repo
-
-* `git push -u origin master`
-
-* `git push origin master`
-
-* `git push`
-
-* <a href="http://stackoverflow.com/a/13148313" target="_blank">push.default</a>
-
---
-
 ### List branches
 
 * `git branch`
@@ -891,6 +883,18 @@ output: index.html
 * `git branch -v`
 
 * `git branch -vv`
+
+--
+
+### Push to remote repo
+
+* `git push -u origin master`
+
+* `git push origin master`
+
+* `git push`
+
+* <a href="http://stackoverflow.com/a/13148313" target="_blank">push.default</a>
 
 --
 
@@ -947,6 +951,17 @@ output: index.html
 
 <h1 style="font-size: 72px">
   <code>git pull --rebase</code>
+</h1>
+
+--
+
+# Practice
+## Resolving conflict
+
+--
+
+<h1 style="font-size: 72px">
+  <code>git mergetool</code>
 </h1>
 
 --
@@ -1011,9 +1026,9 @@ output: index.html
 
 ### Merge
 
-* `git merge`
+* `git merge <branch>`
 
-* `git merge --no-ff`
+* `git merge --no-ff <branch>`
 
 --
 
@@ -1127,7 +1142,7 @@ output: index.html
 
 --
 
-### Parch file
+### Patch file
 
 * `git format-patch`
 
