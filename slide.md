@@ -551,9 +551,9 @@ output: index.html
 * 註冊 [GitHub](http://github.com) 帳號
 * 確認已安裝 Git
 	* 在 Terminal 輸入 `git` 確認
-	* `sudo apt-get install git`
-	* `sudo yum install git`
-* 選擇輔助武器 - 編輯器 (vim, emacs, gedit)
+	* `sudo apt install git`
+	* `sudo dnf install git`
+* 選擇編輯器 (vim, emacs, gedit)
 
 --
 
