@@ -9,7 +9,7 @@ output: index.html
 <br />
 
 ## Denny Huang
-## 2016/11/30
+## 2017/02/04
 
 --
 
@@ -53,6 +53,18 @@ output: index.html
 
 # Git / GitHub
 ## It&apos;s different
+
+--
+
+<div align="center">
+  <img style="height:550px;" src="./img/final_doc.jpg" />
+</div>
+<div align="right">
+  <font size="3">
+    ref:&nbsp;
+	<a href="https://www.facebook.com/photo.php?fbid=1592343944115344" target="_blank">https://www.facebook.com/photo.php?fbid=1592343944115344</a>&nbsp;
+  </font>
+</div>
 
 --
 
@@ -689,7 +701,7 @@ output: index.html
 <br />
 <br />
 <div align="right">
-  <a style="font-size: 25px" href="javascript: jumpPage(64)">img</a>
+  <a style="font-size: 25px" href="javascript: jumpPage(65)">img</a>
 </div>
 
 --
@@ -698,7 +710,7 @@ output: index.html
 ## Commit to repository
 
 <div align="right">
-  <a style="font-size: 25px" href="javascript: jumpPage(64)">img</a>
+  <a style="font-size: 25px" href="javascript: jumpPage(65)">img</a>
 </div>
 
 --
