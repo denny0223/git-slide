@@ -9,7 +9,6 @@ output: index.html
 <br />
 
 ## Denny Huang
-## 2017/02/04
 
 --
 
