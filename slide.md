@@ -522,6 +522,19 @@ output: index.html
 
 --
 
+<div align="center">
+  <br />
+  <img style="width:800px" src="./img/excel.png" />
+</div>
+<div align="right">
+  <font size="3">
+    Source:&nbsp;
+	<a href="https://www.ptt.cc/bbs/Soft_Job/M.1524799027.A.895.html" target="_blank">PTT Soft_Job [請益] 個位的版本控制(EC)工具</a>
+  </font>
+</div>
+
+--
+
 ### 攻城屍的救星
 # 版本控制
 
