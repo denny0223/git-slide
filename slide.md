@@ -718,7 +718,7 @@ output: index.html
 <br />
 <br />
 <div align="right">
-  <a style="font-size: 25px" href="javascript: jumpPage(65)">img</a>
+  <a style="font-size: 25px" href="javascript: jumpPage(66)">img</a>
 </div>
 
 --
@@ -727,7 +727,7 @@ output: index.html
 ## Commit to repository
 
 <div align="right">
-  <a style="font-size: 25px" href="javascript: jumpPage(65)">img</a>
+  <a style="font-size: 25px" href="javascript: jumpPage(66)">img</a>
 </div>
 
 --
