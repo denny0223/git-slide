@@ -709,6 +709,11 @@ output: index.html
 
 * `git reset <file>`
 
+### [Experimental alternatives after 2.23](https://github.blog/2019-08-16-highlights-from-git-2-23/#experimental-alternatives-for-git-checkout)
+
+* `git restore <file>`
+
+
 <br />
 <br />
 <br />
@@ -824,11 +829,11 @@ output: index.html
 
 --
 
-### Checkout to previous version
+### Checkout to specific revision
 
 * `git checkout <revision>`
 
-### Checkout file from previous version
+### Checkout file from specific revision
 
 * `git checkout <revision> <file>`
 
@@ -1016,6 +1021,10 @@ output: index.html
 * `git branch <branch name>`
 
 * `git checkout -b <branch name>`
+
+### [Experimental alternatives after 2.23](https://github.blog/2019-08-16-highlights-from-git-2-23/#experimental-alternatives-for-git-checkout)
+
+* `git switch -c <branch name>`
 
 --
 
