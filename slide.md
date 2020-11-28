@@ -23,7 +23,7 @@ output: index.html
 
 * SITCON 2013, 2014 總召
 
-* <a href="http://about.me/denny0223" target="_blank">About me</a>
+* <a href="http://denny.one/" target="_blank">About me</a>
 
 --
 
@@ -636,7 +636,7 @@ output: index.html
 
 # License
 <div align="center">
-  <a href="http://www.openfoundry.org/tw/licenses" target="_blank">授權條款介紹 - OpenFoundry</a>
+  <a href="https://ossf.denny.one/tw/licenses" target="_blank">授權條款介紹 - OpenFoundry</a>
 </div>
 
 --
@@ -1230,9 +1230,11 @@ output: index.html
 
 * bare repo
 
-* <a href="http://gogs.io/" target="_blank">Gogs</a>
-
 * <a href="https://about.gitlab.com/" target="_blank">GitLab</a>
+
+* <a href="https://gitea.io/" target="_blank">Gitea</a>
+
+* <a href="http://gogs.io/" target="_blank">Gogs</a>
 
 --
 
@@ -1401,7 +1403,7 @@ function parse\_git\_branch {<br />
 
 * <a href="https://www.atlassian.com/git/articles/10-years-of-git/" target="_blank">10 Years of Git</a>
 
-* <a href="https://ithome.com.tw/news/95088" target="_blank">Git 十歲了！Git 之父 Linus Torvalds 說古，大談 Git 的起源</a>
+* <a href="https://www.ithome.com.tw/news/95088" target="_blank">Git 十歲了！Git 之父 Linus Torvalds 說古，大談 Git 的起源</a>
 
 --
 
