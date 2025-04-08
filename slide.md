@@ -1399,11 +1399,17 @@ function parse\_git\_branch {<br />
 
 --
 
-## 10 year
+### 20 Years
 
-* <a href="https://www.atlassian.com/git/articles/10-years-of-git/" target="_blank">10 Years of Git</a>
+* <a href="https://about.gitlab.com/blog/2025/04/07/celebrating-gits-20th-anniversary-with-creator-linus-torvalds/" target="_blank">Celebrating Git's 20th anniversary with creator Linus Torvalds</a>
+
+### 10 Years
+
+* <a href="https://web.archive.org/web/20160312061126/https://www.atlassian.com/git/articles/10-years-of-git/" target="_blank">10 Years of Git</a>
 
 * <a href="https://www.ithome.com.tw/news/95088" target="_blank">Git 十歲了！Git 之父 Linus Torvalds 說古，大談 Git 的起源</a>
+
+* <a href="https://www.linux.com/news/10-years-git-interview-git-creator-linus-torvalds/" target="_blank">10 Years of Git: An Interview with Git Creator Linus Torvalds</a>
 
 --
 
