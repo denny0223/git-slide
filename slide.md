@@ -1,59 +1,67 @@
+---
+marp: true
 title: Git
-output: index.html
+description: Denny Huang's Git workshop slides
+keywords: Git, version control, software development, collaboration, open source
+author: Denny Huang
+url: https://denny.one/git-slide/
+paginate: true
+---
 
---
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-88KM20DWP2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-<h1 style="font-size: 72px">
-	Git
-</h1>
-<br />
+  gtag('config', 'G-88KM20DWP2');
+</script>
+<!-- _paginate: false -->
 
+# Git
 ## Denny Huang
 
---
+---
 
-### Who am I ?
+# Denny Huang
 
-<br />
-<h2 style="font-size: 60px">
-  <b>Denny Huang</b>
-</h2>
+- <a href="https://sitcon.org/" target="_blank">SITCON 學生計算機年會</a> 共同發起人
+- <a href="https://coscup.org/" target="_blank">COSCUP 開源人年會</a> 長期志工
+- <a href="https://hitcon.org/" target="_blank">HITCON 台灣駭客年會</a>  長期志工
+- 開放原始碼/資訊安全社群活躍參與者
+- 曾任雷亞遊戲（Rayark Inc.） 資料分析團隊主管
+- <a href="https://denny.one/" target="_blank">About me</a>
 
-* 雷亞遊戲 Rayark Inc.
-
-* SITCON 2013, 2014 總召
-
-* <a href="http://denny.one/" target="_blank">About me</a>
-
---
+---
 
 # Survey
 
---
+---
 
 # 是否寫過程式？
 
---
+---
 
 <h1>
 小專題/中大型<br />
 專案開發經驗
-<h1>
+</h1>
 
---
+---
 
 # 版本控制經驗
 
---
+---
 
 # Shell 熟悉程度
 
---
+---
 
 # Git / GitHub
 ## It&apos;s different
 
---
+---
 
 <div align="center">
   <img style="height:550px;" src="./img/final_doc.jpg" />
@@ -65,7 +73,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-37.jpg" />
@@ -78,7 +86,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-38.jpg" />
@@ -91,7 +99,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-39.jpg" />
@@ -104,7 +112,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-40.jpg" />
@@ -117,7 +125,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-41.jpg" />
@@ -130,7 +138,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-42.jpg" />
@@ -143,7 +151,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-43.jpg" />
@@ -156,7 +164,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-44.jpg" />
@@ -169,7 +177,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-45.jpg" />
@@ -182,7 +190,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-46.jpg" />
@@ -195,7 +203,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-47.jpg" />
@@ -208,7 +216,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-48.jpg" />
@@ -221,7 +229,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-49.jpg" />
@@ -234,7 +242,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-50.jpg" />
@@ -247,7 +255,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-51.jpg" />
@@ -260,7 +268,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-52.jpg" />
@@ -273,7 +281,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-53.jpg" />
@@ -286,7 +294,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-54.jpg" />
@@ -299,7 +307,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-55.jpg" />
@@ -312,7 +320,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-56.jpg" />
@@ -325,7 +333,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-57.jpg" />
@@ -338,7 +346,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-58.jpg" />
@@ -351,7 +359,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-59.jpg" />
@@ -364,7 +372,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-60.jpg" />
@@ -377,7 +385,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-61.jpg" />
@@ -390,7 +398,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-62.jpg" />
@@ -403,7 +411,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-63.jpg" />
@@ -416,7 +424,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-64.jpg" />
@@ -429,7 +437,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-65.jpg" />
@@ -442,7 +450,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-66.jpg" />
@@ -455,7 +463,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-67.jpg" />
@@ -468,7 +476,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-68.jpg" />
@@ -481,7 +489,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-69.jpg" />
@@ -494,7 +502,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-70.jpg" />
@@ -507,7 +515,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/code_smart_release-71.jpg" />
@@ -520,7 +528,7 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 <div align="center">
   <br />
@@ -533,55 +541,55 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 ### 攻城屍的救星
 # 版本控制
 
---
+---
 
 # 版本控制類型
 
---
+---
 
-### 本地端版本控制
+## 本地端版本控制
 
 <div align="center">
   <br />
   <img style="height:500px; width:660px" src="./img/18333fig0101-tn.png" />
 </div>
 
---
+---
 
-### 集中式版本控制系統
+## 集中式版本控制系統
 
 <div align="center">
   <br />
   <img style="height:500px; width:660px" src="./img/18333fig0102-tn.png" />
 </div>
 
---
+---
 
-### 分散式版本控制系統
+## 分散式版本控制系統
 
 <div align="center">
   <img style="height:500px; width:660px" src="./img/18333fig0103-tn.png" />
 </div>
 
---
+---
 
-### 事前準備
+# 事前準備
 
-* 註冊 [GitHub](http://github.com) 帳號
-* 確認已安裝 Git
-	* 在 Terminal 輸入 `git` 確認
-	* `sudo apt install git`
-	* `sudo dnf install git`
-* 選擇編輯器 (vim, emacs, gedit)
+- 註冊 [GitHub](http://github.com) 帳號
+- 確認已安裝 Git
+	- 在 Terminal 輸入 `git` 確認
+	- `sudo apt install git`
+	- `sudo dnf install git`
+- 選擇編輯器 (vim, emacs, gedit)
 
---
+---
 
-### 環境設定
+# 環境設定
 
 `git config --global user.email "you@example.com"`
 
@@ -591,91 +599,85 @@ output: index.html
 
 `git config --global core.editor vim`
 
---
+---
 
-### 環境設定
+# 環境設定
 
-`git config --global alias.co commit`
+```
+git config --global alias.co commit
+```
 
-`git config --global alias.lg "log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"`
+```
+git config --global alias.lg "log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
+```
 
---
+---
 
 # .gitconfig
 ## Why `--global`?
 
---
+---
 
 # Practice
 ## Create a new repo on GitHub
 
---
+---
 
 # Public / Private
-<div align="center">
-  <a href="https://education.github.com/pack" target="_blank">Student Developer Pack</a>
+## <a href="https://education.github.com/pack" target="_blank">Student Developer Pack</a>
 </div>
 
---
+---
 
 # README.md
-<div align="center">
-  <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a>
-  <a href="https://guides.github.com/features/mastering-markdown/" target="_blank">Mastering Markdown</a>
-</div>
+## <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a> / <a href="https://guides.github.com/features/mastering-markdown/" target="_blank">Mastering Markdown</a>
 
---
+---
 
 # .gitignore
-<div align="center">
-  <a href="https://github.com/github/gitignore" target="_blank">collection of useful .gitignore templates</a><br />
-  <a href="https://git-lfs.github.com/" target="_blank">Git Large File Storage</a>
+## <a href="https://github.com/github/gitignore" target="_blank">.gitignore templates</a> / <a href="https://git-lfs.github.com/" target="_blank">Git Large File Storage</a>
 </div>
 
---
+---
 
 # License
-<div align="center">
-  <a href="https://ossf.denny.one/tw/licenses" target="_blank">授權條款介紹 - OpenFoundry</a>
-</div>
+## <a href="https://ossf.denny.one/tw/licenses" target="_blank">授權條款介紹 - OpenFoundry</a>
 
---
+---
 
 # Practice
 ## Delete the repository
 
---
+---
 
 # Practice
 ## Create an new repo without initialization
 
---
+---
 
 # Practice
 ## Create a new local repository
 
---
+---
 
-<h1 style="font-size: 72px">
-  <code>git help &lt;command&gt;</code>
-</command>
+# `git help <command>`
 
---
+---
 
 # `git init`
 
---
+---
 
 # Practice
 ## Add file to staging area
 
---
+---
 
 <div align="center">
   <img src="./img/index1@2x.png" />
 </div>
 <div align="left">
-  <a style="font-size: 25px" href="javascript: jumpPrePage()">back</a>
+  <a style="font-size: 25px" href="javascript: history.back()">back</a>
 </div>
 <div align="right">
   <font size="4">
@@ -683,92 +685,87 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 # `touch README.md`
 
---
+---
 
 # `git status`
 
---
+---
 
-### Add file to staging area
+# Add file to staging area
 
-* `git add README.md`
+- `git add README.md`
 
-* `git add .`
+- `git add .`
 
---
+---
 
 # .gitkeep
 
---
+---
 
-### Unstage file
+# Unstage file
 
-* `git reset <file>`
+- `git reset <file>`
 
-### [Experimental alternatives after 2.23](https://github.blog/2019-08-16-highlights-from-git-2-23/#experimental-alternatives-for-git-checkout)
+# [Experimental alternatives after 2.23](https://github.blog/2019-08-16-highlights-from-git-2-23/#experimental-alternatives-for-git-checkout)
 
-* `git restore <file>`
+- `git restore <file>`
 
 
-<br />
-<br />
-<br />
 <div align="right">
-  <a style="font-size: 25px" href="javascript: jumpPage(66)">img</a>
+  <a style="font-size: 25px" href="#66">img</a>
 </div>
 
---
+---
 
 # Practice
 ## Commit to repository
 
 <div align="right">
-  <a style="font-size: 25px" href="javascript: jumpPage(66)">img</a>
+  <a style="font-size: 25px" href="#66">img</a>
 </div>
 
---
+---
 
-### Before commit
+# Before commit
 
-* `git status`
+- `git status`
 
-* `git diff`
+- `git diff`
 
-* `git diff --cached`
+- `git diff --cached`
 
---
+---
 
-### Commit
+# Commit
 
-* `git commit`
+- `git commit`
 
-* `git commit -m "first commit"`
+- `git commit -m "first commit"`
 
---
+---
 
 # 何時該 commit？
 
---
+---
 
-<h1 style="font-size: 72px">
-  commit log 怎麼寫？
-</h1>
-<div align="center">
-  <a style="font-size: 30px" href="./img/yo.png" target="_blank">yo</a>
-</div>
+# commit log 怎麼寫？
 <div align="right">
   <a style="font-size: 15px" href="http://www.reddit.com/r/shittyprogramming/comments/1skq3s/my_buddy_is_a_phenomenal_programmer_but_really/" target="_blank">圖片來源</a>
+<div align="center">
+  <img src="./img/yo.png" target="_blank">yo</a>
+</div>
 </div>
 
---
+---
 
 # `git commit -a`
 
---
+---
 
 <div align="center">
   <img src="./img/index2@2x.png" />
@@ -779,118 +776,114 @@ output: index.html
   </font>
 </div>
 
---
+---
 
 # Practice
 ## Show commit message
 
---
+---
 
-### Show commit log
+# Show commit log
 
-* `git log`
+- `git log`
 
-* `git show <revisions>`
+- `git show <revisions>`
 
---
+---
 
-<h1 style="font-size: 60px">
-  SPECIFYING REVISIONS
-</h1>
-<div align="center">
-  <a href="https://www.kernel.org/pub/software/scm/git/docs/gitrevisions.html" target="_blank">gitrevisions(7) Manual Page</a>
-</div>
+# SPECIFYING REVISIONS
+## <a href="https://www.kernel.org/pub/software/scm/git/docs/gitrevisions.html" target="_blank">gitrevisions(7) Manual Page</a>
 
---
+---
 
 # Practice
 ## Untrack / Rename file
 
---
+---
 
-### Remove file
+# Remove file
 
-* `git rm <file>`
+- `git rm <file>`
 
-### Untrack file
+# Untrack file
 
-* `git rm --cached <file>`
+- `git rm --cached <file>`
 
---
+---
 
-### Rename file
+# Rename file
 
-* `git mv <file>`
+- `git mv <file>`
 
---
+---
 
 # Practice
 ## Back to the past
 
---
+---
 
-### Checkout to specific revision
+# Checkout to specific revision
 
-* `git checkout <revision>`
+- `git checkout <revision>`
 
-### Checkout file from specific revision
+# Checkout file from specific revision
 
-* `git checkout <revision> <file>`
+- `git checkout <revision> <file>`
 
---
+---
 
-### Stash files
+# Stash files
 
-* `git stash`
+- `git stash`
 
-* `git stash save "message"`
+- `git stash save "message"`
 
-* `git stash list`
+- `git stash list`
 
-* `git stash pop`
+- `git stash pop`
 
-* `git stash show -p <revision>`
+- `git stash show -p <revision>`
 
---
+---
 
-### Reset to previous version
+# Reset to previous version
 
-* `git reset <revision>`
+- `git reset <revision>`
 
-* `git reset --hard <revision>`
+- `git reset --hard <revision>`
 
---
+---
 
-### Revert commit
+# Revert commit
 
-* `git revert <revision>`
+- `git revert <revision>`
 
---
+---
 
-### Remove untracked files
+# Remove untracked files
 
-* `git clean -f`
+- `git clean -f`
 
-* `git clean -d`
+- `git clean -d`
 
---
+---
 
 # Practice
 ## Push to remote server
 
---
+---
 
-### Add remote repo
+# Add remote repo
 
-* `git remote add origin https://github.com/denny0223/workshop.git`
+- `git remote add origin https://github.com/denny0223/workshop.git`
 
-* `git remote`
+- `git remote`
 
-* `git remote -v`
+- `git remote -v`
 
-* `git remote show origin`
+- `git remote show origin`
 
---
+---
 
 <div align="center">
   <img height="500" src="./img/local-remote.png" />
@@ -901,33 +894,33 @@ output: index.html
   </font>
 </div>
 
---
+---
 
-### List branches
+# List branches
 
-* `git branch`
+- `git branch`
 
-* `git branch -a`
+- `git branch -a`
 
-* `git branch -v`
+- `git branch -v`
 
-* `git branch -vv`
+- `git branch -vv`
 
---
+---
 
-### Push to remote repo
+# Push to remote repo
 
-* `git push -u origin master`
+- `git push -u origin master`
 
-* `git push origin master`
+- `git push origin master`
 
-* `git push`
+- `git push`
 
-* <a href="http://stackoverflow.com/a/13148313" target="_blank">push.default</a>
+- <a href="http://stackoverflow.com/a/13148313" target="_blank">push.default</a>
 
---
+---
 
-### Cache https password
+# Cache https password
 
 `git config --global credential.helper cache`
 
@@ -938,364 +931,352 @@ output: index.html
 <a href="http://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typing-when-using-https-github/5343146#5343146">more</a>
 </div>
 
---
+---
 
 # Practice
 ## Clone your repo via ssh
 ## try to commit and push
 
---
+---
 
 # `git clone`
 
---
+---
 
 <br /><br /><br />
 ## Please make sure you have the correct access rights
 ## and the repository exists.
 
---
+---
 
-<h1 style="font-size: 75px">
-  <a href="https://help.github.com/articles/generating-ssh-keys" target="_blank">Generating SSH keys</a>
-</h1>
+# <a href="https://help.github.com/articles/generating-ssh-keys" target="_blank">Generating SSH keys</a>
 
---
+---
 
 # Practice
 ## Pull from remote repo
 
---
+---
 
-<h1 style="font-size: 36px">
-  Add a new commit at remote via https repo.
-</h1>
+# Add a new commit at remote via https repo.
 
---
+---
 
 # `git pull`
 ## `git fetch` + `git merge`
 
---
+---
 
-<h1 style="font-size: 72px">
-  <code>git pull --rebase</code>
-</h1>
+# `git pull --rebase`
 
---
+---
 
 # Practice
 ## Resolving conflict
 
---
+---
 
-<h1 style="font-size: 72px">
-  <code>git mergetool</code>
-</h1>
+# `git mergetool`
 
---
+---
 
 # Branch
 
---
+---
 
 <div align="center">
   <img style="width:450px" src="./img/git_branching_model.png" />
 </div>
 
---
+---
 
-<a href="http://pages.github.com/" target="_blank">
-  <h1>GitHub Pages</h1>
-</a>
+# <a href="http://pages.github.com/" target="_blank">GitHub Pages</a>
 
---
+---
 
 # Practice
 ## Create a branch
 
---
+---
 
-### Create a branch
+# Create a branch
 
-* `git branch <branch name>`
+- `git branch <branch name>`
 
-* `git checkout -b <branch name>`
+- `git checkout -b <branch name>`
 
-### [Experimental alternatives after 2.23](https://github.blog/2019-08-16-highlights-from-git-2-23/#experimental-alternatives-for-git-checkout)
+# [Experimental alternatives after 2.23](https://github.blog/2019-08-16-highlights-from-git-2-23/#experimental-alternatives-for-git-checkout)
 
-* `git switch -c <branch name>`
+- `git switch -c <branch name>`
 
---
+---
 
 # Practice
 ## commit and push new branch to remote
 
---
+---
 
-### Push when local and remote branch name difference
+# Push when local and remote branch name difference
 
-* `git push <remote> <local_branch_name>:<remote_branch_name>`
+- `git push <remote> <local_branch_name>:<remote_branch_name>`
 
---
+---
 
 # Git Flow
-<h2>
-  <a href="http://nvie.com/posts/a-successful-git-branching-model/" target="_blank">A successful Git branching model</a>
-</h2>
+## <a href="http://nvie.com/posts/a-successful-git-branching-model/" target="_blank">A successful Git branching model</a>
 
---
+---
 
 <div align="center">
   <img style="width:450px" src="./img/git_branching_model.png" />
 </div>
 
---
+---
 
 # Practice
 ## merge branches
 
---
+---
 
-### Merge
+# Merge
 
-* `git merge <branch>`
+- `git merge <branch>`
 
-* `git merge --no-ff <branch>`
+- `git merge --no-ff <branch>`
 
---
+---
 
 # Practice
 ## Delete branches
 
---
+---
 
-### Delete branch
+# Delete branch
 
-* `git branch -d <branch>`
+- `git branch -d <branch>`
 
-* `git branch -D <branch>`
+- `git branch -D <branch>`
 
-* `git push <remote> :<branch>`
+- `git push <remote> :<branch>`
 
-* `git fetch -p`
+- `git fetch -p`
 
---
+---
 
-### Move branch refs
+# Move branch refs
 
-* `git branch -f <branch>`
+- `git branch -f <branch>`
 
-* `git branch -f <branch> <revision>`
+- `git branch -f <branch> <revision>`
 
---
+---
 
 # Practice
 ## Trace log
 
---
+---
 
-### More about diff
+# More about diff
 
-* `git diff <revision>`
+- `git diff <revision>`
 
-* `git diff master@{2014-07-01}`
+- `git diff master@{2014-07-01}`
 
-* `git diff master@{"1 month ago"}`
+- `git diff master@{"1 month ago"}`
 
---
+---
 
-### More about git log
+# More about git log
 
-* `git log -p --stat`
+- `git log -p --stat`
 
-* `git log --oneline`
+- `git log --oneline`
 
-* `git log --graph`
+- `git log --graph`
 
-* `git log --abbrev-commit`
+- `git log --abbrev-commit`
 
-* `git log --pretty=%an`
+- `git log --pretty=%an`
 
-* `git whatchanged`
+- `git whatchanged`
 
---
+---
 
-### Limit
+# Limit
 
-* `git log --author="Denny Huang"`
+- `git log --author="Denny Huang"`
 
-* `git log --since={2014-07-01} --until="1 week ago"`
+- `git log --since={2014-07-01} --until="1 week ago"`
 
-### search by regex
+# search by regex
 
-* `git log -p -i -G 'regex'`
+- `git log -p -i -G 'regex'`
 
---
+---
 
-### Who wrote this code?
+# Who wrote this code?
 
-* `git blame <filepath>`
+- `git blame <filepath>`
 
---
+---
 
-### Use binary search to find the commit that introduced a bug
+# Use binary search to find the commit that introduced a bug
 
-* `git bisect start`
+- `git bisect start`
 
-* `git bisect bad`
+- `git bisect bad`
 
-* `git bisect good v1.0`
+- `git bisect good v1.0`
 
---
+---
 
-### Tag
+# Tag
 
-* `git tag <tagname>`
+- `git tag <tagname>`
 
-* `git push <remote> <tagname>`
+- `git push <remote> <tagname>`
 
-* `git tag -d <tagname>`
+- `git tag -d <tagname>`
 
-* `git push <remote> :<tagname>`
+- `git push <remote> :<tagname>`
 
-* <a href="https://help.github.com/categories/releases/" target="_blank">Release on GitHub</a>
+- <a href="https://help.github.com/categories/releases/" target="_blank">Release on GitHub</a>
 
---
+---
 
-### Rebase
+# Rebase
 
-* `git rebase`
+- `git rebase`
 
---
+---
 
-### Cherry-pick
+# Cherry-pick
 
-* `git cherry-pick <revision>`
+- `git cherry-pick <revision>`
 
---
+---
 
-### Patch file
+# Patch file
 
-* `git format-patch`
+- `git format-patch`
 
-* `git am <patch_file>`
+- `git am <patch_file>`
 
---
+---
 
-### Submodule
+# Submodule
 
-* `git submodule add <repo>`
+- `git submodule add <repo>`
 
-* `git submodule init`
+- `git submodule init`
 
-* `git submodule update`
+- `git submodule update`
 
-* `git submodule foreach git pull origin master`
+- `git submodule foreach git pull origin master`
 
---
+---
 
-### Patch commit
+# Patch commit
 
-* `git add --patch`
+- `git add --patch`
 
-* `git commit --patch`
+- `git commit --patch`
 
---
+---
 
 # Practice
 ## Modify you commit
 
---
+---
 
-### Modify commit history
+# Modify commit history
 
-* `git commit --amend`
+- `git commit --amend`
 
-* `git commit --amend --date="Mar 15 00:00 2014"`
+- `git commit --amend --date="Mar 15 00:00 2014"`
 
-* `git rebase -i <revision>`
+- `git rebase -i <revision>`
 
---
+---
 
-### Useful skill
+# Useful skill
 
-* `git reflog`
+- `git reflog`
 
-* `git fsck`
+- `git fsck`
 
---
+---
 
-### Hosting a Git server
+# Hosting a Git server
 
-* bare repo
+- bare repo
 
-* <a href="https://about.gitlab.com/" target="_blank">GitLab</a>
+- <a href="https://about.gitlab.com/" target="_blank">GitLab</a>
 
-* <a href="https://gitea.io/" target="_blank">Gitea</a>
+- <a href="https://gitea.io/" target="_blank">Gitea</a>
 
-* <a href="http://gogs.io/" target="_blank">Gogs</a>
+- <a href="http://gogs.io/" target="_blank">Gogs</a>
 
---
+---
 
-### Create a bare repo
+# Create a bare repo
 
-* `git init --bare`
+- `git init --bare`
 
-* `git clone ///path/to/repo`
+- `git clone ///path/to/repo`
 
-* `git clone ssh://[username]@[host]:[port]/path/to/repo`
+- `git clone ssh://[username]@[host]:[port]/path/to/repo`
 
---
+---
 
-### Add hooks
+# Add hooks
 
-* `.git/hooks/`
+- `.git/hooks/`
 
-* `git help githooks`
+- `git help githooks`
 
-* <a href="http://git-scm.com/book/en/Customizing-Git-Git-Hooks" target="_blank">more</a>
+- <a href="http://git-scm.com/book/en/Customizing-Git-Git-Hooks" target="_blank">more</a>
 
---
+---
 
-### Rewrite branches
+# Rewrite branches
 
-* `git filter-branch`
+- `git filter-branch`
 
-* <a href="https://help.github.com/articles/remove-sensitive-data/" target="_blank">Remove sensitive data</a>
+- <a href="https://help.github.com/articles/remove-sensitive-data/" target="_blank">Remove sensitive data</a>
 
---
+---
 
-### How Git works?
+# How Git works?
 
-* `inotifywait -rm --format '%w%f %e' -e create -e close_write .`
+- `inotifywait -rm --format '%w%f %e' -e create -e close_write .`
 
-* `git init`
+- `git init`
 
-* `echo test > file`
+- `echo test > file`
 
-* `git add file`
+- `git add file`
 
---
+---
 
-### 9daeafb9864cf43055ae93beb0afd6c7d144bfa4
+# 9daeafb9864cf43055ae93beb0afd6c7d144bfa4
 
-* SHA1 of "blob 5␀test␊"
+- SHA1 of "blob 5␀test␊"
 
-* `printf "blob 5\000test\n" | xxd`
+- `printf "blob 5\000test\n" | xxd`
 
-* `printf "blob 5\000test\n" | shasum`
+- `printf "blob 5\000test\n" | shasum`
 
-* `echo test | git hash-object --stdin`
+- `echo test | git hash-object --stdin`
 
-* `git cat-file -p 9daeafb9864cf43055ae93beb0afd6c7d144bfa4`
+- `git cat-file -p 9daeafb9864cf43055ae93beb0afd6c7d144bfa4`
 
---
+---
 
 `cd .git/objects/9d/`
 
 ``` python
-[denny@X230 9d]$ python
+$ python
 Python 2.7.5 (default, Nov  3 2014, 14:26:24)
 [GCC 4.8.3 20140911 (Red Hat 4.8.3-7)] on linux2
 Type "help", "copyright", "credits" or "license" for more information.
@@ -1306,9 +1287,9 @@ Type "help", "copyright", "credits" or "license" for more information.
 'blob 5\x00test\n'
 ```
 
---
+---
 
-### cat-file -p &lt;revision&gt;
+# cat-file -p &lt;revision&gt;
 
 `git cat-file -p 8b9af3b`
 
@@ -1321,107 +1302,101 @@ committer Denny Huang <denny0223@gmail.com> 1407702807 +0800
 
 update
 ```
---
+---
 
 # Issue tracking system
 
---
+---
 
 # Continuous Integration (CI)
 
---
+---
 
-<h1 style="font-size: 68px">
-  剩下就是你們的事了
-</h1>
+# 剩下就是你們的事了
 
---
+---
 
-### Something useful
+# Something useful
 
-* <a href="http://pages.github.com/" target="_blank">GitHub Pages</a>
+- <a href="http://pages.github.com/" target="_blank">GitHub Pages</a>
 
-* <a href="https://github.com/k4rthik/git-cal" target="_blank">git-cal</a>
+- <a href="https://github.com/k4rthik/git-cal" target="_blank">git-cal</a>
 
-* <a href="http://pcottle.github.io/learnGitBranching/" target="_blank">Learn Git Branching</a>
+- <a href="http://pcottle.github.io/learnGitBranching/" target="_blank">Learn Git Branching</a>
 
-* <a href="https://github.com/JuanitoFatas/git-style-guide/blob/master/README.md" target="_blank">git-style-guide</a>
+- <a href="https://github.com/JuanitoFatas/git-style-guide/blob/master/README.md" target="_blank">git-style-guide</a>
 
---
+---
 
-### Something useful (cnt.
+# Something useful (cnt.
 
-* <a href="https://guides.github.com/" target="_blank">GitHub Guides</a>
+- <a href="https://guides.github.com/" target="_blank">GitHub Guides</a>
 
-* <a href="https://github.com/jlord/git-it/blob/master/README-zhtw.md" target="_blank">Git-it</a>
+- <a href="https://github.com/jlord/git-it/blob/master/README-zhtw.md" target="_blank">Git-it</a>
 
-* <a href="http://onlywei.github.io/explain-git-with-d3/" target="_blank">Visualizing Git Concepts with D3</a>
+- <a href="http://onlywei.github.io/explain-git-with-d3/" target="_blank">Visualizing Git Concepts with D3</a>
 
-### Just for fun
+# Just for fun
 
-* <a href="https://github.com/gelstudios/gitfiti" target="_blank">gitfiti</a>
+- <a href="https://github.com/gelstudios/gitfiti" target="_blank">gitfiti</a>
 
---
+---
 
-### Show branch names in $PS1
+# Show branch names in $PS1
 
 <a href="http://xta.github.io/HalloweenBash/" target="_blank">Halloween Bash Profile Generator</a>
 
-<code>
-function parse\_git\_branch {<br />
-&nbsp;&nbsp; git branch --no-color 2&gt; /dev/null | sed -e '/^[^\*]/d' -e 's/* \(.*\)/(\1)/' <br />
-}<br />
-</code>
+```
+function parse_git_branch {
+    git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+```
 
 `export PS1="\h:\W \u\$(parse_git_branch)$ "`
 
---
+---
 
-### Resources
+# Resources
 
-* <a href="http://git-scm.com/book" target="_blank">Pro Git</a>
+- <a href="http://git-scm.com/book" target="_blank">Pro Git</a>
 
-* <a href="http://git-scm.com/book/zh-tw" target="_blank">Pro Git (zh-tw)</a>
+- <a href="http://git-scm.com/book/zh-tw" target="_blank">Pro Git (zh-tw)</a>
 
-* <a href="http://ihower.tw/git/" target="_blank">版本控制系統 Git 精要</a>
+- <a href="http://ihower.tw/git/" target="_blank">版本控制系統 Git 精要</a>
 
-* <a href="http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_tw/" target="_blank">Git Magic</a>
+- <a href="http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_tw/" target="_blank">Git Magic</a>
 
---
+---
 
-### Resources (cnt.
+# Resources (cnt.
 
-* <a href="http://backlogtool.com/git-guide/en/" target="_blank">Git Beginner&#39;s Guide for Dummies</a>
+- <a href="http://backlogtool.com/git-guide/en/" target="_blank">Git Beginner&#39;s Guide for Dummies</a>
 
-* <a href="http://backlogtool.com/git-guide//tw/" target="_blank">連猴子都能懂的Git入門〜掌握版本控制〜</a>
+- <a href="http://backlogtool.com/git-guide//tw/" target="_blank">連猴子都能懂的Git入門〜掌握版本控制〜</a>
 
-* <a href="http://www.slideshare.net/ihower/git-40877359" target="_blank">Git 版本控制系統 -- 從微觀到宏觀</a>
+- <a href="http://www.slideshare.net/ihower/git-40877359" target="_blank">Git 版本控制系統 -- 從微觀到宏觀</a>
 
---
+---
 
-### 20 Years
+# 20 Years
 
-* <a href="https://about.gitlab.com/blog/2025/04/07/celebrating-gits-20th-anniversary-with-creator-linus-torvalds/" target="_blank">Celebrating Git's 20th anniversary with creator Linus Torvalds</a>
+- <a href="https://about.gitlab.com/blog/2025/04/07/celebrating-gits-20th-anniversary-with-creator-linus-torvalds/" target="_blank">Celebrating Git's 20th anniversary with creator Linus Torvalds</a>
 
-### 10 Years
+# 10 Years
 
-* <a href="https://web.archive.org/web/20160312061126/https://www.atlassian.com/git/articles/10-years-of-git/" target="_blank">10 Years of Git</a>
+- <a href="https://web.archive.org/web/20160312061126/https://www.atlassian.com/git/articles/10-years-of-git/" target="_blank">10 Years of Git</a>
 
-* <a href="https://www.ithome.com.tw/news/95088" target="_blank">Git 十歲了！Git 之父 Linus Torvalds 說古，大談 Git 的起源</a>
+- <a href="https://www.ithome.com.tw/news/95088" target="_blank">Git 十歲了！Git 之父 Linus Torvalds 說古，大談 Git 的起源</a>
 
-* <a href="https://www.linux.com/news/10-years-git-interview-git-creator-linus-torvalds/" target="_blank">10 Years of Git: An Interview with Git Creator Linus Torvalds</a>
+- <a href="https://www.linux.com/news/10-years-git-interview-git-creator-linus-torvalds/" target="_blank">10 Years of Git: An Interview with Git Creator Linus Torvalds</a>
 
---
+---
 
-<h1 style="font-size: 72px">
-  Thanks for listening!
-</h1>
+# Thanks for listening
 
-<br /><br /><br />
-<div align="center">
-  <img style="width:100px;" src="./img/by-sa.png" />
-</div>
-<h2 style="font-size: 18px">
-本投影片採用<a href="http://creativecommons.org/licenses/by-sa/3.0/tw/" target="_blank">創用 CC「姓名標示—相同方式分享 3.0 台灣」授權條款</a>
-</h2>
+<br />
+<br />
 
+###### 本投影片採用
+![width:60px](./img/by-sa.png) <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hant" target="_blank">創用 CC「姓名標示-相同方式分享 4.0 國際」授權條款</a>釋出
+![width:60px](./img/marp.svg) <a href="https://marp.app/" target="_blank">Marp</a> 製作
